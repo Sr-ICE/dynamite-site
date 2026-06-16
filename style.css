@@ -71,6 +71,11 @@ button { font-family: inherit; cursor: pointer; }
 }
 .eyebrow--light { color: #f2884e; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4); }
 
+/* 英語サブコピー（バイリンガル） */
+.sec__en { font-family: var(--font-display); font-weight: 600; font-size: clamp(14px, 1.4vw, 17px); letter-spacing: 0.06em; color: var(--muted); margin-top: 12px; }
+.sec__en--light { color: rgba(255, 255, 255, 0.78); }
+.cta .sec__en, .community .sec__en { margin-left: auto; margin-right: auto; }
+
 .btn {
   display: inline-flex;
   align-items: center;
