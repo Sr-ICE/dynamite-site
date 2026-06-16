@@ -353,6 +353,33 @@ button { font-family: inherit; cursor: pointer; }
    JOURNAL一覧（nu-kuju風シンプルリスト）
    ========================================================= */
 .journal-page, .exp-list { padding: clamp(72px, 9vw, 130px) 0; }
+
+/* =========================================================
+   お問い合わせフォーム / 法的ページ（下層共通）
+   ========================================================= */
+.form-page, .legal { padding: clamp(64px, 8vw, 110px) 0; }
+.form-page__inner { max-width: 680px; margin: 0 auto; padding: 0 40px; }
+.cform { display: flex; flex-direction: column; gap: 24px; }
+.cform__row { display: flex; flex-direction: column; gap: 8px; }
+.cform label { font-family: var(--font-display); font-weight: 600; font-size: 13px; letter-spacing: 0.04em; color: var(--ink-soft); }
+.cform input, .cform select, .cform textarea { font-family: var(--font-body); font-size: 15px; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 13px 16px; transition: border-color 0.25s var(--ease); }
+.cform input:focus, .cform select:focus, .cform textarea:focus { outline: none; border-color: var(--fire); }
+.cform textarea { resize: vertical; }
+.cform .btn { align-self: flex-start; margin-top: 8px; border: none; }
+.cform__note { font-size: 12px; color: var(--muted); }
+
+.legal__inner { max-width: 760px; margin: 0 auto; padding: 0 40px; }
+.legal h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(18px, 1.8vw, 22px); letter-spacing: -0.01em; margin: 40px 0 12px; }
+.legal h2:first-child { margin-top: 0; }
+.legal p { color: var(--ink-soft); font-size: 15px; line-height: 1.95; margin-bottom: 14px; }
+.legal dl { border-top: 1px solid var(--line); margin: 0; }
+.legal dt { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: 0.04em; color: var(--ink); padding-top: 22px; }
+.legal dd { margin: 6px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-size: 15px; line-height: 1.9; }
+@media (min-width: 640px) {
+  .legal dl { display: grid; grid-template-columns: 220px 1fr; }
+  .legal dt { border-bottom: 1px solid var(--line); padding-bottom: 22px; padding-right: 20px; }
+  .legal dd { border-top: 1px solid transparent; padding-top: 22px; margin-top: 0; }
+}
 .journal-page__inner { max-width: 1000px; margin: 0 auto; padding: 0 40px; }
 .jlist { border-top: 1px solid var(--line); }
 .jrow { display: grid; grid-template-columns: 210px 1fr auto; align-items: baseline; gap: 28px; padding: 32px 8px; border-bottom: 1px solid var(--line); color: inherit; transition: padding 0.4s var(--ease), background-color 0.4s var(--ease); }
