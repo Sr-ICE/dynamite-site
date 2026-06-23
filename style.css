@@ -237,6 +237,33 @@ button { font-family: inherit; cursor: pointer; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
 .hero__scroll { position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,.85); font-family: var(--font-display); font-size: 11px; letter-spacing: 0.24em; }
 .hero__scroll span:last-child { animation: bob 1.8s ease-in-out infinite; font-size: 14px; }
+
+/* ===== MV：MURACO風レイアウト（左縦ナビ＋右下コピー＋カルーセル番号） ===== */
+.hero__side { position: absolute; left: 0; top: 0; bottom: 0; z-index: 6; display: flex; flex-direction: column; justify-content: space-between; padding: 28px 44px; }
+.hero__brand { display: inline-flex; color: #fff; }
+.hero__brand .brand__mark { display: block; width: 96px; height: 30px; background-color: currentColor; -webkit-mask: url(logo.png) left center / contain no-repeat; mask: url(logo.png) left center / contain no-repeat; }
+.hero__menu { display: flex; flex-direction: column; gap: 16px; }
+.hero__menu a { font-family: var(--font-display); font-weight: 600; font-size: 14px; letter-spacing: 0.08em; color: #fff; transition: opacity 0.25s var(--ease); }
+.hero__menu a:hover { opacity: 0.6; }
+.hero__side-foot { display: flex; flex-direction: column; gap: 11px; }
+.hero__side-foot a { font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: 0.06em; color: rgba(255,255,255,0.85); transition: opacity 0.25s var(--ease); }
+.hero__side-foot a:hover { opacity: 0.6; }
+.hero__feature { position: absolute; right: 44px; bottom: 86px; z-index: 6; text-align: right; color: #fff; max-width: 64%; }
+.hero__label { font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: 0.22em; color: rgba(255,255,255,0.85); text-shadow: 0 1px 10px rgba(0,0,0,0.4); }
+.hero__feature .hero__title { font-family: var(--font-display); font-weight: 800; font-size: clamp(40px, 5.4vw, 78px); line-height: 1.08; letter-spacing: 0.01em; margin-top: 14px; text-shadow: 0 2px 30px rgba(0,0,0,0.46); }
+.hero__sub { margin-top: 16px; font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.9); text-shadow: 0 1px 12px rgba(0,0,0,0.5); }
+.hero__pager { position: absolute; right: 44px; bottom: 36px; z-index: 6; display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 600; font-size: 13px; letter-spacing: 0.06em; color: rgba(255,255,255,0.85); }
+.hero__pager-line { width: 44px; height: 1px; background: rgba(255,255,255,0.45); }
+/* ホーム：トップでは横ヘッダーを隠し、スクロールで出す */
+body.home .site-header { opacity: 0; pointer-events: none; transition: opacity 0.4s var(--ease), background-color 0.35s var(--ease), box-shadow 0.35s var(--ease); }
+body.home .site-header.is-scrolled { opacity: 1; pointer-events: auto; }
+@media (max-width: 860px) {
+  .hero__side { display: none; }
+  body.home .site-header { opacity: 1; pointer-events: auto; }
+  .hero__feature { left: 24px; right: 24px; bottom: 96px; max-width: none; text-align: left; }
+  .hero__pager { right: 24px; }
+  .hero__scroll { display: none; }
+}
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
 
 /* =========================================================

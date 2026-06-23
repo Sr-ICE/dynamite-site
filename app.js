@@ -37,12 +37,14 @@
 
   // ④ ヒーローの写真カルーセル（MURACO風・自動回転）
   var slides = document.querySelectorAll('.hero__slide');
+  var heroNum = document.getElementById('hero-num');
   if (slides.length > 1 && !reduce) {
     var ci = 0;
     setInterval(function () {
       slides[ci].classList.remove('is-active');
       ci = (ci + 1) % slides.length;
       slides[ci].classList.add('is-active');
+      if (heroNum) heroNum.textContent = ci + 1;
     }, 5000);
   }
 })();

@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="site-header">
@@ -43,14 +43,33 @@
       <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1920&q=80');"></div>
     </div>
     <div class="hero__scrim"></div>
-    <div class="hero__glow"></div>
-    <div class="hero__inner">
-      <span class="eyebrow hero__eyebrow" data-reveal>OUTDOOR CAMP &amp; EVENT</span>
-      <h1 class="hero__title r2" data-reveal>非日常で、<br><span class="grad">ひとつ</span>になる。</h1>
+
+    <!-- 左：縦ナビ（MURACO風） -->
+    <div class="hero__side">
+      <a class="hero__brand" href="#top" aria-label="Dynamite ホーム"><span class="brand__mark" role="img" aria-label="Dynamite outdoor company"></span></a>
+      <nav class="hero__menu" aria-label="ヒーローナビ">
+        <a href="#concept">ABOUT</a>
+        <a href="experiences.html">EXPERIENCES</a>
+        <a href="#podcast">PODCAST</a>
+        <a href="journal.html">JOURNAL</a>
+      </nav>
+      <div class="hero__side-foot">
+        <a href="https://sr-ice.github.io/dynamite-ec/" target="_blank" rel="noopener">オンラインストア</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
     </div>
-    <a class="hero__scroll" href="#concept" aria-label="下へスクロール">
-      <span>SCROLL</span><span>↓</span>
-    </a>
+
+    <!-- 右下：コピー（MURACO風） -->
+    <div class="hero__feature">
+      <span class="hero__label">OUTDOOR CAMP &amp; EVENT</span>
+      <h1 class="hero__title">非日常で、<br><span class="grad">ひとつ</span>になる。</h1>
+      <p class="hero__sub">火を囲み、知らない同士がひとつのチームになる夜を。</p>
+    </div>
+
+    <!-- 右下：カルーセル送り -->
+    <div class="hero__pager"><span id="hero-num">1</span><span class="hero__pager-line"></span><span>4</span></div>
+
+    <a class="hero__scroll" href="#concept" aria-label="下へスクロール"><span>SCROLL</span><span>↓</span></a>
   </section>
 
   <!-- ============ CONCEPT ============ -->
