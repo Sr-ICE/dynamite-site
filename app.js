@@ -34,4 +34,15 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     items.forEach(function (el) { io.observe(el); });
   }
+
+  // ④ ヒーローの写真カルーセル（MURACO風・自動回転）
+  var slides = document.querySelectorAll('.hero__slide');
+  if (slides.length > 1 && !reduce) {
+    var ci = 0;
+    setInterval(function () {
+      slides[ci].classList.remove('is-active');
+      ci = (ci + 1) % slides.length;
+      slides[ci].classList.add('is-active');
+    }, 5000);
+  }
 })();

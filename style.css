@@ -205,6 +205,9 @@ button { font-family: inherit; cursor: pointer; }
    HERO
    ========================================================= */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; }
+.hero__slides { position: absolute; inset: 0; }
+.hero__slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transform: scale(1.06); transition: opacity 1.5s var(--ease); }
+.hero__slide.is-active { opacity: 1; animation: heroZoom 7s var(--ease) forwards; }
 .hero__bg {
   position: absolute; inset: 0;
   background-image: url('https://images.unsplash.com/photo-1504851149312-7a075b496cc7?auto=format&fit=crop&w=1920&q=80');
