@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>C案｜OKUTAMA HOTPOT CLASH 2026｜日本×ベトナム 秋の交流キャンプ</title>
+<meta name="description" content="2026.10.31-11.1、奥多摩・檜原村の貸切キャンプ場TONAKAで開催。日本とベトナムの共通文化「鍋」で繋がる1泊2日の交流キャンプ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   PATTERN C — フィールドノート
+   オフホワイトの紙 × チャコール。等高線と方眼、精密な情報設計。
+   写真は控えめに、余白と罫線でリズムをつくる。
+   ========================================================= */
+
+:root {
+  --paper:   #faf8f4;
+  --paper-2: #f1eee7;
+  --ink:     #23211c;
+  --ink-2:   #55514a;
+  --mute:    #8d887e;
+  --rust:    #b8462f;
+  --hair:    rgba(35, 33, 28, 0.14);
+  --hair-2:  rgba(35, 33, 28, 0.07);
+
+  --f-mono: 'Space Mono', ui-monospace, monospace;
+  --f-body: 'Noto Sans JP', sans-serif;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --wrap: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--f-body); font-size: 15px; line-height: 2;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  background-image:
+    linear-gradient(var(--hair-2) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hair-2) 1px, transparent 1px);
+  background-size: 28px 28px, 28px 28px;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, p, dl, dd, figure { margin: 0; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: 28px; }
+.sec { padding: clamp(72px, 9vw, 122px) 0; scroll-margin-top: 58px; position: relative; }
+.sec + .sec { border-top: 1px solid var(--hair); }
+.sec--fill { background: var(--paper-2); }
+.sec--dark { background: var(--ink); color: var(--paper); }
+.sec--dark .lead, .sec--dark .note { color: rgba(250, 248, 244, 0.72); }
+
+/* 見出し系 */
+.lbl {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.16em; color: var(--mute);
+}
+.lbl b { color: var(--rust); font-weight: 700; }
+.lbl::after { content: ""; flex: 1; height: 1px; background: var(--hair); }
+.sec--dark .lbl::after { background: rgba(250, 248, 244, 0.2); }
+.h2 {
+  font-weight: 700; font-size: clamp(23px, 3vw, 38px); line-height: 1.62;
+  letter-spacing: 0.01em; margin-top: 20px; text-wrap: balance;
+}
+.h2 em { font-style: normal; color: var(--rust); }
+.sec--dark .h2 em { color: #e08a6c; }
+.h2-en { font-family: var(--f-mono); font-size: 12.5px; letter-spacing: 0.12em; color: var(--mute); margin-top: 10px; }
+.lead { margin-top: 22px; max-width: 58ch; font-size: 14.5px; color: var(--ink-2); }
+.note { font-size: 12.5px; color: var(--mute); }
+.tbd { font-family: var(--f-mono); font-size: 0.86em; color: var(--rust); }
+
+/* リンク・ボタン */
+.act {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.08em;
+  padding: 13px 24px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper);
+  transition: background-color 0.25s var(--ease), color 0.25s var(--ease);
+}
+.act:hover { background: var(--rust); border-color: var(--rust); }
+.act--line { background: transparent; color: var(--ink); }
+.act--line:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.sec--dark .act { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.sec--dark .act:hover { background: var(--rust); color: var(--paper); border-color: var(--rust); }
+.sec--dark .act--line { background: transparent; color: var(--paper); }
+
+/* ---------- ヘッダー ---------- */
+.hd {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 12px 28px; background: rgba(250, 248, 244, 0.92);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--hair);
+}
+.hd__l { display: flex; align-items: center; gap: 12px; }
+.hd__logo { height: 18px; width: auto; }
+.hd__t { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.12em; color: var(--ink-2); }
+.hd__nav { display: flex; gap: 24px; font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.1em; color: var(--ink-2); }
+.hd__nav a:hover { color: var(--rust); }
+.hd__cta { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.08em; padding: 8px 18px; background: var(--ink); color: var(--paper); }
+.hd__cta:hover { background: var(--rust); }
+
+/* ---------- ヒーロー ---------- */
+.hero { position: relative; overflow: hidden; padding: clamp(48px, 7vw, 96px) 0 0; }
+.hero__contour { position: absolute; inset: 0; pointer-events: none; }
+.hero__contour svg { width: 100%; height: 100%; }
+.hero__in { position: relative; z-index: 2; }
+.hero__coord { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.1em; color: var(--mute); }
+.hero__ttl {
+  margin-top: 22px; font-weight: 700; font-size: clamp(30px, 5.4vw, 62px); line-height: 1.3; letter-spacing: 0.005em;
+}
+.hero__ttl small { display: block; font-family: var(--f-mono); font-weight: 400; font-size: clamp(13px, 1.5vw, 17px); letter-spacing: 0.16em; color: var(--rust); margin-bottom: 14px; }
+.hero__jp { margin-top: 24px; font-size: clamp(15px, 1.8vw, 19px); line-height: 2; max-width: 46ch; color: var(--ink-2); }
+.hero__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.hero__ph { margin-top: 52px; aspect-ratio: 21 / 9; overflow: hidden; border: 1px solid var(--hair); }
+.hero__ph img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.82) contrast(1.02); }
+.hero__cap { display: flex; justify-content: space-between; gap: 16px; margin-top: 10px; font-family: var(--f-mono); font-size: 11.5px; color: var(--mute); }
+
+/* データ表 */
+.data { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--ink); margin-top: 52px; }
+.data__c { padding: 22px 20px 26px; border-left: 1px solid var(--hair); }
+.data__c:first-child { border-left: 0; padding-left: 0; }
+.data__k { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.14em; color: var(--mute); }
+.data__v { margin-top: 10px; font-weight: 700; font-size: 16px; line-height: 1.6; }
+.data__s { margin-top: 6px; font-size: 12.5px; color: var(--mute); }
+
+/* ---------- コンセプト ---------- */
+.pair { display: grid; grid-template-columns: 1fr auto 1fr; gap: clamp(16px, 3vw, 44px); align-items: stretch; margin-top: 52px; }
+.pair__c { border: 1px solid var(--hair); background: var(--paper); padding: 28px 26px 30px; }
+.pair__k { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.16em; color: var(--rust); }
+.pair__w { font-weight: 700; font-size: clamp(24px, 3.2vw, 34px); line-height: 1.4; margin-top: 10px; }
+.pair__s { margin-top: 10px; font-size: 13.5px; color: var(--ink-2); }
+.pair__x { align-self: center; font-family: var(--f-mono); font-size: 20px; color: var(--mute); }
+.rows { margin-top: 60px; border-top: 1px solid var(--hair); }
+.row { display: grid; grid-template-columns: 56px 1fr 1.4fr; gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--hair); align-items: baseline; }
+.row__n { font-family: var(--f-mono); font-size: 12px; color: var(--rust); }
+.row__t { font-weight: 700; font-size: 16px; }
+.row__p { font-size: 14px; color: var(--ink-2); }
+
+/* ---------- プログラム ---------- */
+.prog { margin-top: 56px; border-top: 1px solid var(--hair); }
+.prog__i { display: grid; grid-template-columns: 190px 1fr; gap: clamp(20px, 4vw, 52px); padding: 34px 0; border-bottom: 1px solid var(--hair); align-items: start; }
+.prog__ph { aspect-ratio: 4 / 3; overflow: hidden; border: 1px solid var(--hair); }
+.prog__ph img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.8) contrast(1.02); }
+.prog__no { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.14em; color: var(--rust); }
+.prog__t { font-weight: 700; font-size: clamp(17px, 2vw, 22px); margin-top: 8px; }
+.prog__en { font-family: var(--f-mono); font-size: 12px; color: var(--mute); margin-top: 6px; }
+.prog__p { margin-top: 14px; font-size: 14px; color: var(--ink-2); max-width: 62ch; }
+.prog__time { font-family: var(--f-mono); font-size: 12px; color: var(--mute); margin-top: 12px; }
+
+/* ---------- 会場 / DAY2 ---------- */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 70px); align-items: center; }
+.two__ph { aspect-ratio: 3 / 4; overflow: hidden; border: 1px solid var(--hair); }
+.two__ph img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85) contrast(1.02); }
+.spec { margin-top: 30px; border-top: 1px solid var(--ink); }
+.spec__r { display: grid; grid-template-columns: 96px 1fr; gap: 18px; padding: 13px 0; border-bottom: 1px solid var(--hair); }
+.spec__r dt { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.12em; color: var(--mute); padding-top: 3px; }
+.spec__r dd { margin: 0; font-size: 14px; color: var(--ink-2); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.tags span { font-family: var(--f-mono); font-size: 11.5px; padding: 6px 14px; border: 1px solid currentColor; color: var(--ink-2); }
+.sec--dark .tags span { color: rgba(250, 248, 244, 0.78); }
+.sec--dark .spec { border-top-color: rgba(250, 248, 244, 0.4); }
+.sec--dark .spec__r { border-bottom-color: rgba(250, 248, 244, 0.16); }
+.sec--dark .spec__r dd { color: rgba(250, 248, 244, 0.8); }
+.sec--dark .two__ph { border-color: rgba(250, 248, 244, 0.2); }
+
+/* ---------- タイムテーブル ---------- */
+.tt { margin-top: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px); }
+.tt__h { display: flex; align-items: baseline; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+.tt__d { font-family: var(--f-mono); font-weight: 700; font-size: 19px; letter-spacing: 0.06em; }
+.tt__s { font-family: var(--f-mono); font-size: 11.5px; color: var(--mute); }
+.tt__r { display: grid; grid-template-columns: 58px 1fr; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--hair-2); }
+.tt__t { font-family: var(--f-mono); font-size: 13px; color: var(--mute); }
+.tt__x { font-size: 14.5px; font-weight: 700; }
+.tt__x small { display: block; font-weight: 400; font-size: 12.5px; color: var(--mute); margin-top: 2px; }
+.tt__r--key .tt__t { color: var(--rust); }
+.tt__r--key .tt__x { color: var(--rust); }
+
+/* ---------- INFO ---------- */
+.info { margin-top: 48px; border-top: 1px solid var(--ink); }
+.info__r { display: grid; grid-template-columns: 150px 200px 1fr; gap: 22px; padding: 18px 0; border-bottom: 1px solid var(--hair); align-items: baseline; }
+.info__k { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.12em; color: var(--mute); }
+.info__v { font-weight: 700; font-size: 15px; }
+.info__s { font-size: 13px; color: var(--ink-2); }
+
+/* ---------- ENTRY ---------- */
+.entry { text-align: center; }
+.entry .lbl { justify-content: center; }
+.entry .lbl::after { display: none; }
+.entry__t { font-weight: 700; font-size: clamp(24px, 3.6vw, 42px); line-height: 1.5; margin-top: 18px; }
+.entry__p { margin-top: 20px; font-size: 14.5px; color: rgba(250, 248, 244, 0.75); max-width: 52ch; margin-inline: auto; }
+.entry__a { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+.entry__n { margin-top: 22px; font-family: var(--f-mono); font-size: 11.5px; color: rgba(250, 248, 244, 0.55); }
+
+/* ---------- フッター ---------- */
+.ft { padding: 36px 0; border-top: 1px solid var(--hair); }
+.ft__in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.ft__logo { height: 18px; width: auto; opacity: 0.8; }
+.ft__nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: 12.5px; color: var(--ink-2); }
+.ft__nav a:hover { color: var(--rust); }
+.ft__c { font-family: var(--f-mono); font-size: 11.5px; color: var(--mute); }
+
+.sticky { position: fixed; inset: auto 0 0 0; z-index: 50; display: none; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(250, 248, 244, 0.96); border-top: 1px solid var(--hair); }
+.sticky .act { width: 100%; justify-content: center; }
+
+[data-rv] { opacity: 0; transform: translateY(18px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+[data-rv].in { opacity: 1; transform: none; }
+
+@media (max-width: 900px) {
+  .hd__nav { display: none; }
+  .data { grid-template-columns: repeat(2, 1fr); }
+  .data__c:nth-child(3) { border-left: 0; padding-left: 0; }
+  .data__c:nth-child(n+3) { border-top: 1px solid var(--hair); }
+  .pair { grid-template-columns: 1fr; }
+  .pair__x { text-align: center; }
+  .row { grid-template-columns: 40px 1fr; }
+  .row__p { grid-column: 2; }
+  .prog__i { grid-template-columns: 1fr; }
+  .prog__ph { max-width: 240px; }
+  .two { grid-template-columns: 1fr; }
+  .tt { grid-template-columns: 1fr; }
+  .info__r { grid-template-columns: 1fr; gap: 6px; }
+  .sticky { display: block; }
+  body { padding-bottom: 70px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <a class="hd__l" href="../index.html" aria-label="Dynamite ホーム">
+    <img class="hd__logo" src="../logo-full.png" alt="Dynamite">
+    <span class="hd__t">OKUTAMA HOTPOT CLASH 2026</span>
+  </a>
+  <nav class="hd__nav" aria-label="ページ内ナビ">
+    <a href="#concept">01 Concept</a><a href="#program">02 Program</a><a href="#venue">03 Venue</a>
+    <a href="#day2">04 Day2</a><a href="#time">05 Time</a><a href="#info">06 Info</a>
+  </nav>
+  <a class="hd__cta" href="#entry">JOIN</a>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__contour" aria-hidden="true">
+      <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <path id="cl" d="M600,120 C820,120 1010,230 1040,360 C1070,490 900,600 660,610 C420,620 220,540 180,410 C140,280 380,120 600,120 Z"/>
+        </defs>
+        <g fill="none" stroke="#23211c" stroke-opacity="0.13">
+          <use href="#cl" transform="translate(600,370) scale(1.32) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(1.18) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(1.04) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(0.90) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(0.76) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(0.62) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(0.48) translate(-600,-370)"/>
+          <use href="#cl" transform="translate(600,370) scale(0.34) translate(-600,-370)"/>
+        </g>
+        <g fill="none" stroke="#b8462f" stroke-opacity="0.5" stroke-dasharray="4 5">
+          <use href="#cl" transform="translate(600,370) scale(0.20) translate(-600,-370)"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrap hero__in">
+      <p class="hero__coord">35.7297°N / 139.1547°E — 東京都西多摩郡檜原村 &nbsp;|&nbsp; 2026.10.31 SAT — 11.01 SUN</p>
+      <h1 class="hero__ttl">
+        <small>OKUTAMA HOTPOT CLASH 2026 / JP × VN AUTUMN CAMP</small>
+        ひとつの鍋が、<em style="font-style:normal; color:var(--rust);">いちばん早い自己紹介</em>になる。
+      </h1>
+      <p class="hero__jp">日本とベトナムの共通文化「鍋」でつながる、1泊2日の交流キャンプ。奥多摩・檜原村の貸切キャンプ場で、スープをシェアしながら秋の夜を過ごします。</p>
+      <div class="hero__acts">
+        <a class="act" href="#entry">参加を申し込む →</a>
+        <a class="act act--line" href="#time">当日のタイムテーブル</a>
+      </div>
+
+      <figure class="hero__ph"><img src="img/hero-bonfire.jpg" alt="焚き火を囲む参加者"></figure>
+      <figcaption class="hero__cap"><span>fig.01 — 焚き火を囲む夜（イメージ）</span><span>DYNAMITE / OUTDOOR CAMP &amp; EVENT</span></figcaption>
+
+      <div class="data">
+        <div class="data__c"><p class="data__k">DATE</p><p class="data__v">10/31(土) 13:00<br>— 11/1(日) 11:00</p><p class="data__s">1泊2日</p></div>
+        <div class="data__c"><p class="data__k">PLACE</p><p class="data__v">TONAKA<br>東京・檜原村</p><p class="data__s">1日1組限定の貸切</p></div>
+        <div class="data__c"><p class="data__k">FEE</p><p class="data__v">¥○,○○○ <span class="tbd">(仮)</span></p><p class="data__s">食事・ランタン材料費込み <span class="tbd">※要確認</span></p></div>
+        <div class="data__c"><p class="data__k">CAPACITY</p><p class="data__v">○○名 <span class="tbd">(仮)</span></p><p class="data__s">日本人・在日ベトナム人ミックス</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONCEPT ===================== -->
+  <section class="sec" id="concept">
+    <div class="wrap">
+      <p class="lbl"><b>01</b> CONCEPT</p>
+      <h2 class="h2">なぜ、日本 × ベトナム × <em>鍋</em>なのか。</h2>
+      <p class="h2-en">Why hotpot brings us together</p>
+      <p class="lead">在日ベトナム人と日本人が、秋の大自然のなかで自然体のまま親睦を深めるフレンドリーな交流キャンプです。言葉や文化の壁を感じさせず、お互いの価値観をリスペクトしながら楽しめる体験型のコンテンツを用意しています。</p>
+
+      <div class="pair" data-rv>
+        <div class="pair__c">
+          <p class="pair__k">JAPAN</p>
+          <p class="pair__w">鍋 / Nabe</p>
+          <p class="pair__s">みんなで囲んで、会話を楽しむ。</p>
+        </div>
+        <p class="pair__x">×</p>
+        <div class="pair__c">
+          <p class="pair__k">VIETNAM</p>
+          <p class="pair__w">Lẩu / ラウ</p>
+          <p class="pair__s">熱いスープをシェアして距離を縮める。</p>
+        </div>
+      </div>
+
+      <div class="rows">
+        <div class="row" data-rv><p class="row__n">01</p><p class="row__t">自然体で繋がる</p><p class="row__p">形式ばった交流会ではなく、火と食事を挟んだフラットな時間。初対面でも自然に会話が生まれます。</p></div>
+        <div class="row" data-rv><p class="row__n">02</p><p class="row__t">共通の「鍋好き」が架け橋</p><p class="row__p">日本とベトナムには、温かい鍋をみんなで囲んで会話を楽しむという共通の食文化があります。</p></div>
+        <div class="row" data-rv><p class="row__n">03</p><p class="row__t">言葉より先に、味が伝わる</p><p class="row__p">1つの鍋を囲んでスープをシェアする体験は、どんな自己紹介よりも一瞬で人の距離を縮めます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRAM ===================== -->
+  <section class="sec sec--fill" id="program">
+    <div class="wrap">
+      <p class="lbl"><b>02</b> PROGRAM — DAY 1</p>
+      <h2 class="h2">つくって、飲み歩いて、<em>灯す</em>。</h2>
+      <p class="h2-en">Cook, taste, vote, and light up the forest</p>
+
+      <div class="prog">
+        <article class="prog__i" data-rv>
+          <figure class="prog__ph"><img src="img/lantern-wall.jpg" alt="ランタン"></figure>
+          <div>
+            <p class="prog__no">PROGRAM 01</p>
+            <h3 class="prog__t">日越融合スープバトル（Lẩu Clash）</h3>
+            <p class="prog__en">Japan × Vietnam soup battle</p>
+            <p class="prog__p">共通の基本食材（肉・野菜）はチーム全員おなじ。違いを生むのは、ドラフト会議で獲得した日本とベトナムの調味料です。味噌とナンプラー、柚子胡椒とレモングラス——組み合わせは自由。オリジナルの鍋を作り上げて対抗戦に挑みます。</p>
+            <p class="prog__time">14:30 — 15:45</p>
+          </div>
+        </article>
+        <article class="prog__i" data-rv>
+          <figure class="prog__ph"><img src="img/lantern-shop.jpg" alt="ランタン"></figure>
+          <div>
+            <p class="prog__no">PROGRAM 02</p>
+            <h3 class="prog__t">スープ・ホッピング</h3>
+            <p class="prog__en">Soup hopping &amp; voting</p>
+            <p class="prog__p">マイコップを持って、全チームの鍋を飲み歩く時間。味の違いを楽しみながら投票していくうちに、自然と笑顔と会話が生まれます。</p>
+            <p class="prog__time">15:45 — 17:00</p>
+          </div>
+        </article>
+        <article class="prog__i" data-rv>
+          <figure class="prog__ph"><img src="img/bonfire-forest.jpg" alt="森の焚き火"></figure>
+          <div>
+            <p class="prog__no">PROGRAM 03</p>
+            <h3 class="prog__t">ランタン一斉点灯 ＆ 表彰式</h3>
+            <p class="prog__en">Lantern illumination</p>
+            <p class="prog__p">夕暮れ時、参加者全員で願いを描いたペーパーランタン（安全なLED使用）を作成。17:00のカウントダウンで一斉点灯し、ベトナムの古都ホイアンのような明かりが森に広がります。</p>
+            <p class="prog__time">17:00 —</p>
+          </div>
+        </article>
+        <article class="prog__i" data-rv>
+          <figure class="prog__ph"><img src="img/hero-bonfire.jpg" alt="焚き火"></figure>
+          <div>
+            <p class="prog__no">PROGRAM 04</p>
+            <h3 class="prog__t">焚き火ネットワーキング</h3>
+            <p class="prog__en">Bonfire chill</p>
+            <p class="prog__p">表彰式のあとは、そのまま焚き火を囲んで語り合う夜へ。プログラムを詰め込みすぎず、火のまわりで話し込む時間をたっぷり残しています。ここで生まれる関係が、このキャンプのいちばんの持ち帰りです。</p>
+            <p class="prog__time">19:00 — 22:00</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VENUE ===================== -->
+  <section class="sec" id="venue">
+    <div class="wrap two">
+      <figure class="two__ph" data-rv><img src="img/camp-autumn.jpg" alt="秋の森のキャンプサイト"></figure>
+      <div data-rv>
+        <p class="lbl"><b>03</b> VENUE</p>
+        <h2 class="h2">1日1組限定の絶景、<em>「TONAKA」</em>貸切。</h2>
+        <p class="h2-en">A private campsite in Hinohara, Tokyo</p>
+        <p class="lead">会場は檜原村にある完全プライベートキャンプ場「TONAKA」。全面にウッドチップが敷き詰められていて、靴や服を汚さず快適に過ごせます。貸切なので、周りを気にせず仲間との時間を楽しめる特別な空間です。</p>
+        <dl class="spec">
+          <div class="spec__r"><dt>ACCESS</dt><dd>東京都西多摩郡檜原村 <span class="tbd">※最寄駅・送迎の有無は要確認</span></dd></div>
+          <div class="spec__r"><dt>GROUND</dt><dd>全面ウッドチップ敷き。雨のあともぬかるみにくい</dd></div>
+          <div class="spec__r"><dt>STAY</dt><dd>テント泊（<span class="tbd">レンタルの有無は要確認</span>）</dd></div>
+          <div class="spec__r"><dt>AFTER</dt><dd>希望者は解散後、近隣の温泉へ</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DAY 2 ===================== -->
+  <section class="sec sec--dark" id="day2">
+    <div class="wrap two">
+      <div data-rv>
+        <p class="lbl"><b>04</b> DAY 2 — THE CHILL</p>
+        <h2 class="h2">大自然 × 極上<em>バインミー</em>の朝。</h2>
+        <p class="h2-en">Bánh mì morning in the mountains</p>
+        <p class="lead">澄んだ朝の空気のなか、温かいベトナムコーヒーの香りで目覚める2日目。朝食は、サクサクのフランスパンに具材をたっぷり挟んだ特製バインミー。朝日を浴びながら、ゆったりとしたチルタイムを共有します。</p>
+        <div class="tags"><span>特製バインミー</span><span>ベトナムコーヒー</span><span>記念撮影</span><span>希望者は近隣の温泉へ</span></div>
+      </div>
+      <figure class="two__ph" data-rv><img src="img/banhmi.jpg" alt="バインミー"></figure>
+    </div>
+  </section>
+
+  <!-- ===================== TIMETABLE ===================== -->
+  <section class="sec" id="time">
+    <div class="wrap">
+      <p class="lbl"><b>05</b> TIMETABLE</p>
+      <h2 class="h2">1泊2日の、はじめから終わりまで。</h2>
+      <p class="h2-en">Two days, from clash to chill</p>
+
+      <div class="tt">
+        <div data-rv>
+          <div class="tt__h"><p class="tt__d">DAY 1</p><p class="tt__s">10/31 SAT — THE CLASH</p></div>
+          <div class="tt__r"><p class="tt__t">13:00</p><p class="tt__x">現地集合・チーム発表・テント設営<small>Meet up &amp; set up</small></p></div>
+          <div class="tt__r"><p class="tt__t">13:45</p><p class="tt__x">アイスブレイク ＆ ランタン作り<small>Ice break &amp; lantern making</small></p></div>
+          <div class="tt__r tt__r--key"><p class="tt__t">14:30</p><p class="tt__x">鍋（Hotpot）調理スタート<small>〜 スパイス争奪ドラフト会議 〜</small></p></div>
+          <div class="tt__r"><p class="tt__t">15:45</p><p class="tt__x">スープ・ホッピング（試飲＆投票）<small>Tasting &amp; voting</small></p></div>
+          <div class="tt__r tt__r--key"><p class="tt__t">17:00</p><p class="tt__x">ランタン一斉点灯 ＆ 表彰式<small>Lantern countdown &amp; awards</small></p></div>
+          <div class="tt__r"><p class="tt__t">19:00</p><p class="tt__x">焚き火ネットワーキング<small>Bonfire chill</small></p></div>
+          <div class="tt__r"><p class="tt__t">22:00</p><p class="tt__x">消灯・就寝<small>Lights out</small></p></div>
+        </div>
+        <div data-rv>
+          <div class="tt__h"><p class="tt__d">DAY 2</p><p class="tt__s">11/1 SUN — THE CHILL</p></div>
+          <div class="tt__r"><p class="tt__t">07:30</p><p class="tt__x">起床・モーニングコーヒー<small>Vietnamese coffee</small></p></div>
+          <div class="tt__r tt__r--key"><p class="tt__t">08:00</p><p class="tt__x">バインミー朝食タイム<small>〜 大自然の中で味わう最高の朝 〜</small></p></div>
+          <div class="tt__r"><p class="tt__t">09:30</p><p class="tt__x">テント撤収・会場清掃<small>Pack up &amp; clean</small></p></div>
+          <div class="tt__r"><p class="tt__t">10:30</p><p class="tt__x">クロージング ＆ 記念撮影<small>Closing &amp; group photo</small></p></div>
+          <div class="tt__r"><p class="tt__t">11:00</p><p class="tt__x">現地解散<small>希望者は近隣の温泉へ</small></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFO ===================== -->
+  <section class="sec sec--fill" id="info">
+    <div class="wrap">
+      <p class="lbl"><b>06</b> INFORMATION</p>
+      <h2 class="h2">参加にあたって</h2>
+      <p class="h2-en">Details before you join</p>
+
+      <div class="info">
+        <div class="info__r" data-rv><p class="info__k">FEE / 参加費</p><p class="info__v">¥○,○○○ <span class="tbd">(仮)</span></p><p class="info__s">含まれるもの：食事（DAY1鍋・DAY2バインミー）／ランタン材料費／会場費 <span class="tbd">※要確認</span></p></div>
+        <div class="info__r" data-rv><p class="info__k">CAPACITY / 定員</p><p class="info__v">○○名 <span class="tbd">(仮)</span></p><p class="info__s">申込多数の場合は先着順 <span class="tbd">※要確認</span></p></div>
+        <div class="info__r" data-rv><p class="info__k">BRING / 持ち物</p><p class="info__v">マイコップ・防寒着</p><p class="info__s">スープ・ホッピングでマイコップを使用。10月末の奥多摩は朝晩冷えます。<span class="tbd">※テント・寝袋の貸出有無は要確認</span></p></div>
+        <div class="info__r" data-rv><p class="info__k">LANGUAGE / 言語</p><p class="info__v">日本語・ベトナム語</p><p class="info__s">通訳サポートの有無 <span class="tbd">※要確認</span>。言葉が分からなくても楽しめる進行にしています。</p></div>
+        <div class="info__r" data-rv><p class="info__k">RAIN / 雨天時</p><p class="info__v"><span class="tbd">※要確認</span></p><p class="info__s">雨天決行・荒天中止などの判断基準と、連絡方法をここに記載します。</p></div>
+        <div class="info__r" data-rv><p class="info__k">CANCEL / キャンセル</p><p class="info__v"><span class="tbd">※要確認</span></p><p class="info__s">キャンセル料の発生時期と、返金の扱いをここに記載します。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENTRY ===================== -->
+  <section class="sec sec--dark entry" id="entry">
+    <div class="wrap">
+      <p class="lbl"><b>07</b> ENTRY</p>
+      <h2 class="entry__t">同じ鍋を囲む、2日間へ。</h2>
+      <p class="entry__p">はじめましての人と、ひとつの鍋を囲む。それだけで十分な理由になる2日間です。定員に達し次第、受付を終了します。</p>
+      <div class="entry__a">
+        <a class="act" href="#">参加を申し込む →</a>
+        <a class="act act--line" href="../contact.html">主催者に質問する</a>
+      </div>
+      <p class="entry__n">申込フォームURL ※未定（仮リンク） / 申込締切 ○月○日（仮）</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap ft__in">
+    <a href="../index.html" aria-label="Dynamite ホーム"><img class="ft__logo" src="../logo-full.png" alt="Dynamite"></a>
+    <nav class="ft__nav" aria-label="フッターナビ">
+      <a href="../index.html">Dynamiteについて</a><a href="../experiences.html">他の体験を見る</a>
+      <a href="../contact.html">お問い合わせ</a><a href="../privacy.html">プライバシーポリシー</a>
+    </nav>
+    <p class="ft__c">© 2026 Dynamite / Photos: Unsplash</p>
+  </div>
+</footer>
+
+<div class="sticky"><a class="act" href="#entry">参加を申し込む →</a></div>
+
+<script>
+const io = new IntersectionObserver((es) => {
+  es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { rootMargin: '0px 0px -8% 0px' });
+document.querySelectorAll('[data-rv]').forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
