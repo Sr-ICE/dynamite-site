@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OKUTAMA HOTPOT CLASH 2026｜スープバトル × ランタン祭り｜TONAKA</title>
+<!-- ラフ公開中のため検索避け。内容が確定したらこの1行を削除する -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="2026.10.31-11.1、東京・檜原村の貸切キャンプ場TONAKAで開催。日本×ベトナムのスープバトルと、ホイアンのランタン祭り。1泊2日の交流キャンプ。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OKUTAMA HOTPOT CLASH 2026｜スープバトル × ランタン祭り">
+<meta property="og:description" content="ひとつの鍋が、いちばん早い自己紹介になる。日本×ベトナム、1泊2日の交流キャンプ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pattern-d.css">
+</head>
+<body>
+
+<!--
+  ===========================================================================
+  【多言語について】
+  同じ内容を lang="ja"（日本語）／ lang="vi"（ベトナム語）／ lang="en"（英語）
+  の3つ並べて書いています。ヘッダーの JP / VI / EN ボタンを押すと
+  <html data-lang="○○"> が切り替わり、一致しない言語がCSSで非表示になります。
+  ページの読み込み直しは起きません。
+
+  ※ ベトナム語・英語は現状こちらで用意した仮訳です。
+     藤井さんの原稿ができたら、各 lang="vi" / lang="en" の中身を
+     差し替えてください。レイアウトはさわらなくて大丈夫です。
+  ===========================================================================
+-->
+
+<!-- ============================== ヘッダー ============================== -->
+<header class="hd" id="hd">
+  <a class="hd__brand" href="../index.html" aria-label="Dynamite">
+    <img class="hd__logo" src="../logo-mark.png" alt="Dynamite">
+    <span class="hd__ttl">Hotpot Clash 2026</span>
+  </a>
+
+  <nav class="hd__nav" aria-label="ページ内ナビ">
+    <a href="#main">Highlights</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#venue">Venue</a>
+    <a href="#info">Info</a>
+  </nav>
+
+  <div class="hd__right">
+    <!-- 言語切替ボタン -->
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ja" aria-current="true">JP</button>
+      <button type="button" data-lang="vi" aria-current="false">VI</button>
+      <button type="button" data-lang="en" aria-current="false">EN</button>
+    </div>
+    <a class="hd__cta" href="#entry">Join</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="hero__photo" aria-hidden="true"></div>
+    <div class="hero__veil" aria-hidden="true"></div>
+
+    <!-- 会場に張り渡したランタンの列（SVGで描画） -->
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="lampGlow">
+            <stop offset="0%" stop-color="#ffcf8a" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#f0a03c" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="lampA" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffd79a"/><stop offset="100%" stop-color="#f0932c"/>
+          </linearGradient>
+          <linearGradient id="lampB" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ff9a86"/><stop offset="100%" stop-color="#e2483c"/>
+          </linearGradient>
+          <g id="lamp">
+            <line x1="0" y1="-70" x2="0" y2="-24" stroke="#f2ece1" stroke-opacity="0.18"/>
+            <ellipse cx="0" cy="-24" rx="9" ry="3.4" fill="#2a2018"/>
+            <path d="M-9,-24 C-19,-8 -19,10 -9,24 L9,24 C19,10 19,-8 9,-24 Z" fill="url(#lampA)"/>
+            <path d="M-9,-24 C-19,-8 -19,10 -9,24 L-2,24 C-9,10 -9,-8 -2,-24 Z" fill="#fff2d2" opacity="0.35"/>
+            <ellipse cx="0" cy="24" rx="9" ry="3.4" fill="#2a2018"/>
+            <line x1="0" y1="27" x2="0" y2="42" stroke="#e2483c" stroke-width="1.6"/>
+            <circle cx="0" cy="44" r="2.4" fill="#e2483c"/>
+          </g>
+          <g id="lampV">
+            <line x1="0" y1="-70" x2="0" y2="-24" stroke="#f2ece1" stroke-opacity="0.18"/>
+            <ellipse cx="0" cy="-24" rx="9" ry="3.4" fill="#2a2018"/>
+            <path d="M-9,-24 C-19,-8 -19,10 -9,24 L9,24 C19,10 19,-8 9,-24 Z" fill="url(#lampB)"/>
+            <path d="M-9,-24 C-19,-8 -19,10 -9,24 L-2,24 C-9,10 -9,-8 -2,-24 Z" fill="#ffd2c6" opacity="0.32"/>
+            <ellipse cx="0" cy="24" rx="9" ry="3.4" fill="#2a2018"/>
+            <line x1="0" y1="27" x2="0" y2="42" stroke="#f0a03c" stroke-width="1.6"/>
+            <circle cx="0" cy="44" r="2.4" fill="#f0a03c"/>
+          </g>
+        </defs>
+        <path d="M-20,150 C240,238 480,196 720,244 C980,296 1220,238 1460,300" fill="none" stroke="#f2ece1" stroke-opacity="0.14"/>
+        <g class="lantern"><g transform="translate(150,206)"><circle r="52" fill="url(#lampGlow)" opacity="0.5"/><use href="#lamp"/></g></g>
+        <g class="lantern lantern--b"><g transform="translate(310,214)"><circle r="46" fill="url(#lampGlow)" opacity="0.42"/><use href="#lampV"/></g></g>
+        <g class="lantern lantern--c"><g transform="translate(470,224)"><circle r="52" fill="url(#lampGlow)" opacity="0.5"/><use href="#lamp"/></g></g>
+        <g class="lantern lantern--d"><g transform="translate(640,248)"><circle r="46" fill="url(#lampGlow)" opacity="0.4"/><use href="#lampV"/></g></g>
+        <g class="lantern lantern--b"><g transform="translate(820,268)"><circle r="52" fill="url(#lampGlow)" opacity="0.5"/><use href="#lamp"/></g></g>
+        <g class="lantern lantern--c"><g transform="translate(1000,272)"><circle r="46" fill="url(#lampGlow)" opacity="0.42"/><use href="#lampV"/></g></g>
+        <g class="lantern"><g transform="translate(1180,262)"><circle r="52" fill="url(#lampGlow)" opacity="0.48"/><use href="#lamp"/></g></g>
+        <g class="lantern lantern--d"><g transform="translate(1350,286)"><circle r="46" fill="url(#lampGlow)" opacity="0.4"/><use href="#lampV"/></g></g>
+      </svg>
+    </div>
+
+    <div class="hero__inner">
+      <div class="wrap">
+        <p class="hero__date">2026.10.31 SAT — 11.01 SUN</p>
+
+        <h1 class="hero__ttl">
+          <span>Okutama</span>
+          <span class="l2">Hotpot Clash</span>
+          <span class="l3">2026 &nbsp;/&nbsp; Soup Battle × Lantern Night</span>
+        </h1>
+
+        <p class="hero__jp">
+          <span lang="ja">ひとつの鍋が、<b>いちばん早い自己紹介</b>になる。</span>
+          <span lang="vi">Một nồi lẩu chung là <b>cách làm quen nhanh nhất</b>.</span>
+          <span lang="en">One hotpot is <b>the fastest introduction</b>.</span>
+        </p>
+
+        <p class="hero__sub">
+          <span lang="ja">日本×ベトナムのスープバトルと、森いっぱいに広がるホイアンのランタン祭り。会場は東京・檜原村の貸切キャンプ場 TONAKA。</span>
+          <span lang="vi">Đại chiến nồi lẩu Nhật – Việt, và lễ hội đèn lồng Hội An giữa rừng thu. Địa điểm: khu cắm trại riêng TONAKA, làng Hinohara, Tokyo.</span>
+          <span lang="en">A Japan × Vietnam soup battle, and a Hoi An lantern night that fills the forest. At TONAKA, a private campsite in Hinohara, Tokyo.</span>
+        </p>
+
+        <div class="hero__acts">
+          <a class="pill pill--fill" href="#entry">
+            <span class="pill__en">Join us</span>
+            <span class="pill__jp">
+              <span lang="ja">参加を申し込む</span>
+              <span lang="vi">Đăng ký tham gia</span>
+              <span lang="en">Apply to join</span>
+            </span>
+          </a>
+          <a class="pill pill--line" href="#main">
+            <span class="pill__en">Highlights</span>
+            <span class="pill__jp">
+              <span lang="ja">2つの主役</span>
+              <span lang="vi">Hai điểm nhấn</span>
+              <span lang="en">Two headliners</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <span class="hero__scroll">SCROLL</span>
+  </section>
+
+  <!-- ============================== 開催概要バー ============================== -->
+  <section class="facts" aria-label="開催概要">
+    <div class="wrap facts__in">
+      <div class="facts__i">
+        <p class="facts__k">Date</p>
+        <p class="facts__v">10/31 SAT 13:00 —<br>11/01 SUN 11:00</p>
+        <p class="facts__s">
+          <span lang="ja">1泊2日</span>
+          <span lang="vi">2 ngày 1 đêm</span>
+          <span lang="en">2 days, 1 night</span>
+        </p>
+      </div>
+      <div class="facts__i">
+        <p class="facts__k">Place</p>
+        <p class="facts__v">TONAKA</p>
+        <p class="facts__s">
+          <span lang="ja">東京・檜原村／1日1組限定の貸切キャンプ場</span>
+          <span lang="vi">Làng Hinohara, Tokyo — khu cắm trại riêng, mỗi ngày chỉ một nhóm</span>
+          <span lang="en">Hinohara, Tokyo — a private campsite, one group per day</span>
+        </p>
+      </div>
+      <div class="facts__i">
+        <p class="facts__k">Fee</p>
+        <p class="facts__v">¥○,○○○ <span class="tbd">（仮）</span></p>
+        <p class="facts__s">
+          <span lang="ja">事前入金制 <span class="tbd">※金額は確定次第</span></span>
+          <span lang="vi">Thanh toán trước <span class="tbd">※ Sẽ cập nhật</span></span>
+          <span lang="en">Prepayment <span class="tbd">※ TBC</span></span>
+        </p>
+      </div>
+      <div class="facts__i">
+        <p class="facts__k">Language</p>
+        <p class="facts__v">日本語 / Tiếng Việt</p>
+        <p class="facts__s">
+          <span lang="ja">通訳サポート <span class="tbd">※要確認</span></span>
+          <span lang="vi">Hỗ trợ phiên dịch <span class="tbd">※ Sẽ cập nhật</span></span>
+          <span lang="en">Interpretation support <span class="tbd">※ TBC</span></span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 主役2本 ============================== -->
+  <section class="sec sec--deep" id="main">
+    <div class="wrap">
+      <div data-rv>
+        <p class="kicker">01 &nbsp;Highlights</p>
+        <h2 class="h2">
+          <span lang="ja">つくって、飲み歩いて、<em>灯す</em>。</span>
+          <span lang="vi">Cùng nấu, cùng nếm, và <em>thắp sáng</em>.</span>
+          <span lang="en">Cook, taste, and <em>light up</em>.</span>
+        </h2>
+        <p class="h2-en">Cook, taste, vote, and light up the forest</p>
+      </div>
+
+      <div class="main2">
+
+        <!-- 主役① スープバトル -->
+        <article class="mn" data-rv>
+          <div class="mn__art">
+            <span class="mn__badge">Main 01</span>
+            <img src="img/bonfire-forest.jpg" alt="火にかけた鍋" loading="lazy">
+          </div>
+          <div class="mn__b">
+            <h3 class="mn__t">
+              <span lang="ja">日越融合スープバトル</span>
+              <span lang="vi">Đại chiến nồi lẩu Nhật – Việt</span>
+              <span lang="en">Japan × Vietnam Soup Battle</span>
+            </h3>
+            <p class="mn__vn">Lẩu Clash</p>
+            <p class="mn__en">Japan × Vietnam Soup Battle</p>
+
+            <p class="mn__p">
+              <span lang="ja">共通の基本食材（肉・野菜）はチーム全員おなじ。<br>差を生むのは、ドラフト会議で獲得した日本とベトナムの調味料です。<br>味噌とナンプラー、柚子胡椒とレモングラス——組み合わせは自由。<br>オリジナルの鍋を作り上げて対抗戦に挑んだあとは、マイコップを持って全チームの鍋を飲み歩き、投票します。</span>
+              <span lang="vi">Nguyên liệu cơ bản (thịt, rau) giống nhau cho mọi đội. Khác biệt nằm ở gia vị Nhật và Việt giành được trong vòng bốc thăm — miso và nước mắm, yuzu kosho và sả, phối hợp tùy ý. Sau khi hoàn thành nồi lẩu của riêng mình, mọi người mang cốc riêng đi nếm thử lẩu của các đội khác và bình chọn.</span>
+              <span lang="en">Every team starts from the same base ingredients (meat, vegetables). The difference comes from the Japanese and Vietnamese seasonings won in a draft — miso and fish sauce, yuzu kosho and lemongrass, combined however you like. Once your pot is ready, everyone takes a cup and tastes every team's soup to vote.</span>
+            </p>
+
+            <p class="mn__time">14:30 — 17:00</p>
+          </div>
+        </article>
+
+        <!-- 主役② ホイアンのランタン祭り -->
+        <article class="mn mn--flip" data-rv>
+          <div class="mn__art">
+            <span class="mn__badge">Main 02</span>
+            <img src="img/lantern-wall.jpg" alt="ホイアンのランタンが灯る夜" loading="lazy">
+          </div>
+          <div class="mn__b">
+            <h3 class="mn__t">
+              <span lang="ja">ホイアンのランタン祭り</span>
+              <span lang="vi">Lễ hội đèn lồng Hội An</span>
+              <span lang="en">Hoi An Lantern Festival</span>
+            </h3>
+            <p class="mn__vn">Lễ hội đèn lồng Hội An</p>
+            <p class="mn__en">Hoi An Lantern Night</p>
+
+            <p class="mn__p">
+              <span lang="ja">夕暮れ時、参加者全員で願いを描いたランタン（LED使用）を作成。<br>カウントダウンで一斉点灯し、ベトナムの古都ホイアンのような明かりが森に広がります。</span>
+              <span lang="vi">Lúc chạng vạng, mọi người cùng làm đèn lồng (dùng đèn LED) và viết điều ước lên đó. Cùng đếm ngược để thắp sáng đồng loạt, ánh đèn lan khắp rừng như phố cổ Hội An.</span>
+              <span lang="en">At dusk, everyone makes a lantern (LED) with a wish written on it. On a countdown, we light them all together, and the forest fills with light like the old town of Hoi An.</span>
+            </p>
+
+            <p class="mn__time">17:00 —</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 当日の流れ ============================== -->
+  <section class="sec" id="schedule">
+    <div class="wrap">
+      <div data-rv>
+        <p class="kicker">02 &nbsp;Schedule</p>
+        <h2 class="h2">
+          <span lang="ja">当日の<em>流れ</em>。</span>
+          <span lang="vi">Lịch trình <em>hai ngày</em>.</span>
+          <span lang="en">How the <em>two days</em> go.</span>
+        </h2>
+        <p class="h2-en">Two days, from clash to chill</p>
+        <p class="lead">
+          <span lang="ja">タイムテーブルは仮です。<span class="tbd">※要確認</span><br>確定次第、この表を差し替えます。</span>
+          <span lang="vi">Lịch trình dưới đây là tạm thời. <span class="tbd">※ Sẽ cập nhật</span><br>Sẽ được cập nhật khi có thông tin chính thức.</span>
+          <span lang="en">This timetable is provisional. <span class="tbd">※ TBC</span><br>It will be updated once confirmed.</span>
+        </p>
+      </div>
+
+      <div class="sch">
+        <!-- DAY 1 -->
+        <div data-rv>
+          <div class="sch__h">
+            <p class="sch__d">Day 1</p>
+            <p class="sch__tag">10 / 31 SAT</p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">13:00</p>
+            <p class="sch__ti">
+              <span lang="ja">現地集合・チーム発表・テント設営<span class="sch__s">Meet up &amp; set up</span></span>
+              <span lang="vi">Tập trung, công bố đội, dựng lều<span class="sch__s">Meet up &amp; set up</span></span>
+              <span lang="en">Meet up, team announcement, pitch tents<span class="sch__s">Meet up &amp; set up</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">13:45</p>
+            <p class="sch__ti">
+              <span lang="ja">アイスブレイク＆ランタン作り<span class="sch__s">Ice break &amp; lantern making</span></span>
+              <span lang="vi">Làm quen &amp; làm đèn lồng<span class="sch__s">Ice break &amp; lantern making</span></span>
+              <span lang="en">Ice break &amp; lantern making<span class="sch__s">Ice break &amp; lantern making</span></span>
+            </p>
+          </div>
+          <div class="sch__r sch__r--peak">
+            <p class="sch__t">14:30</p>
+            <p class="sch__ti">
+              <span lang="ja">鍋（Hotpot）調理スタート<span class="sch__s">〜 スパイス争奪ドラフト会議 〜</span></span>
+              <span lang="vi">Bắt đầu nấu lẩu<span class="sch__s">〜 Bốc thăm giành gia vị 〜</span></span>
+              <span lang="en">Hotpot cooking starts<span class="sch__s">〜 Spice draft 〜</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">15:45</p>
+            <p class="sch__ti">
+              <span lang="ja">スープ・ホッピング（試飲＆投票）<span class="sch__s">Tasting &amp; voting</span></span>
+              <span lang="vi">Đi nếm lẩu các đội &amp; bình chọn<span class="sch__s">Tasting &amp; voting</span></span>
+              <span lang="en">Soup hopping (tasting &amp; voting)<span class="sch__s">Tasting &amp; voting</span></span>
+            </p>
+          </div>
+          <div class="sch__r sch__r--peak">
+            <p class="sch__t">17:00</p>
+            <p class="sch__ti">
+              <span lang="ja">ランタン一斉点灯＆表彰式<span class="sch__s">Lantern countdown &amp; awards</span></span>
+              <span lang="vi">Thắp đèn lồng đồng loạt &amp; trao giải<span class="sch__s">Lantern countdown &amp; awards</span></span>
+              <span lang="en">Lantern countdown &amp; awards<span class="sch__s">Lantern countdown &amp; awards</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">19:00</p>
+            <p class="sch__ti">
+              <span lang="ja">焚き火ネットワーキング<span class="sch__s">Bonfire chill</span></span>
+              <span lang="vi">Giao lưu bên đống lửa<span class="sch__s">Bonfire chill</span></span>
+              <span lang="en">Bonfire networking<span class="sch__s">Bonfire chill</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">22:00</p>
+            <p class="sch__ti">
+              <span lang="ja">消灯・就寝<span class="sch__s">Lights out</span></span>
+              <span lang="vi">Tắt đèn, đi ngủ<span class="sch__s">Lights out</span></span>
+              <span lang="en">Lights out<span class="sch__s">Lights out</span></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div data-rv>
+          <div class="sch__h">
+            <p class="sch__d">Day 2</p>
+            <p class="sch__tag">11 / 01 SUN</p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">07:30</p>
+            <p class="sch__ti">
+              <span lang="ja">起床・モーニングコーヒー<span class="sch__s">Vietnamese coffee</span></span>
+              <span lang="vi">Thức dậy, cà phê buổi sáng<span class="sch__s">Vietnamese coffee</span></span>
+              <span lang="en">Wake up, morning coffee<span class="sch__s">Vietnamese coffee</span></span>
+            </p>
+          </div>
+          <div class="sch__r sch__r--peak">
+            <p class="sch__t">08:00</p>
+            <p class="sch__ti">
+              <span lang="ja">バインミー朝食タイム<span class="sch__s">〜 大自然の中で味わう朝食 〜</span></span>
+              <span lang="vi">Bữa sáng bánh mì<span class="sch__s">〜 Giữa thiên nhiên 〜</span></span>
+              <span lang="en">Banh mi breakfast<span class="sch__s">〜 In the middle of nature 〜</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">09:30</p>
+            <p class="sch__ti">
+              <span lang="ja">テント撤収・会場清掃<span class="sch__s">Pack up &amp; clean</span></span>
+              <span lang="vi">Thu dọn lều &amp; dọn dẹp<span class="sch__s">Pack up &amp; clean</span></span>
+              <span lang="en">Pack up tents &amp; clean<span class="sch__s">Pack up &amp; clean</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">10:30</p>
+            <p class="sch__ti">
+              <span lang="ja">クロージング＆記念撮影<span class="sch__s">Closing &amp; group photo</span></span>
+              <span lang="vi">Bế mạc &amp; chụp ảnh chung<span class="sch__s">Closing &amp; group photo</span></span>
+              <span lang="en">Closing &amp; group photo<span class="sch__s">Closing &amp; group photo</span></span>
+            </p>
+          </div>
+          <div class="sch__r">
+            <p class="sch__t">11:00</p>
+            <p class="sch__ti">
+              <span lang="ja">現地解散<span class="sch__s tbd">希望者は近隣の温泉へ ※要確認</span></span>
+              <span lang="vi">Kết thúc, giải tán<span class="sch__s tbd">Ai muốn có thể ghé onsen gần đó ※ Sẽ cập nhật</span></span>
+              <span lang="en">Finish on site<span class="sch__s tbd">Optional nearby hot spring ※ TBC</span></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 会場 ============================== -->
+  <section class="sec sec--paper" id="venue">
+    <div class="wrap venue">
+      <figure class="venue__art" data-rv>
+        <img src="img/camp-autumn.jpg" alt="秋の森のキャンプサイト" loading="lazy">
+        <figcaption class="venue__ph">
+          <span lang="ja">※ 現在はイメージ写真です。TONAKA の実写に差し替え予定。</span>
+          <span lang="vi">※ Ảnh minh họa. Sẽ thay bằng ảnh thật của TONAKA.</span>
+          <span lang="en">※ Placeholder image. To be replaced with actual photos of TONAKA.</span>
+        </figcaption>
+      </figure>
+
+      <div data-rv>
+        <p class="kicker">03 &nbsp;Venue</p>
+        <h2 class="h2">
+          <span lang="ja">1日1組限定、<em>「TONAKA」</em>貸切。</span>
+          <span lang="vi">Bao trọn <em>“TONAKA”</em> — mỗi ngày chỉ một nhóm.</span>
+          <span lang="en">The whole of <em>“TONAKA”</em>, just for us.</span>
+        </h2>
+        <p class="h2-en">A private campsite in Hinohara, Tokyo</p>
+        <p class="lead">
+          <span lang="ja">会場は東京・檜原村の完全プライベートキャンプ場「TONAKA」。全面にウッドチップが敷き詰められていて、靴や服を汚さずに過ごせます。1日1組の貸切なので、周りを気にせず思いきり楽しめる場所です。</span>
+          <span lang="vi">Địa điểm là khu cắm trại riêng “TONAKA” ở làng Hinohara, Tokyo. Toàn bộ mặt sân phủ dăm gỗ nên giày và quần áo không bị lấm bẩn. Mỗi ngày chỉ đón một nhóm, nên bạn có thể thoải mái vui chơi.</span>
+          <span lang="en">The venue is TONAKA, a fully private campsite in Hinohara, Tokyo. The ground is covered in wood chips, so your shoes and clothes stay clean. Only one group is booked per day, so we have the place to ourselves.</span>
+        </p>
+
+        <dl class="venue__list">
+          <div class="venue__row">
+            <dt>Address</dt>
+            <dd>
+              <span lang="ja">東京都西多摩郡檜原村 <span class="tbd">※詳細は確定次第</span></span>
+              <span lang="vi">Làng Hinohara, Nishitama, Tokyo <span class="tbd">※ Sẽ cập nhật</span></span>
+              <span lang="en">Hinohara, Nishitama, Tokyo <span class="tbd">※ TBC</span></span>
+            </dd>
+          </div>
+          <div class="venue__row">
+            <dt>Access</dt>
+            <dd>
+              <span lang="ja">都心から車で約90分／武蔵五日市駅からの送迎 <span class="tbd">※要確認</span></span>
+              <span lang="vi">Khoảng 90 phút lái xe từ trung tâm Tokyo / đưa đón từ ga Musashi-Itsukaichi <span class="tbd">※ Sẽ cập nhật</span></span>
+              <span lang="en">About 90 min by car from central Tokyo / shuttle from Musashi-Itsukaichi Stn <span class="tbd">※ TBC</span></span>
+            </dd>
+          </div>
+          <div class="venue__row">
+            <dt>Stay</dt>
+            <dd>
+              <span lang="ja">テント泊（レンタルの有無は <span class="tbd">※要確認</span>）</span>
+              <span lang="vi">Ngủ lều (việc cho thuê thiết bị <span class="tbd">※ Sẽ cập nhật</span>)</span>
+              <span lang="en">Camping in tents (rental availability <span class="tbd">※ TBC</span>)</span>
+            </dd>
+          </div>
+          <div class="venue__row">
+            <dt>Facility</dt>
+            <dd>
+              <span lang="ja">ウッドチップ敷き・水場・トイレあり</span>
+              <span lang="vi">Sân phủ dăm gỗ, có khu vực nước và nhà vệ sinh</span>
+              <span lang="en">Wood-chip ground, water point and toilets on site</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 参加にあたって ============================== -->
+  <section class="sec sec--deep" id="info">
+    <div class="wrap">
+      <div data-rv>
+        <p class="kicker">04 &nbsp;Information</p>
+        <h2 class="h2">
+          <span lang="ja">参加にあたって。</span>
+          <span lang="vi">Trước khi tham gia.</span>
+          <span lang="en">Before you join.</span>
+        </h2>
+        <p class="h2-en">Fees, capacity and what to bring</p>
+      </div>
+
+      <div class="info">
+        <div class="info__c" data-rv>
+          <p class="info__k">Fee</p>
+          <p class="info__v">¥○,○○○ <span class="tbd">（仮）</span></p>
+          <p class="info__s">
+            <span lang="ja">内訳は検討中です <span class="tbd">※要確認</span></span>
+            <span lang="vi">Chi tiết đang được xây dựng <span class="tbd">※ Sẽ cập nhật</span></span>
+            <span lang="en">Breakdown is still being worked out <span class="tbd">※ TBC</span></span>
+          </p>
+        </div>
+        <div class="info__c" data-rv>
+          <p class="info__k">Capacity</p>
+          <p class="info__v">○○名 <span class="tbd">（仮）</span></p>
+          <p class="info__s">
+            <span lang="ja">申込多数の場合は先着順 <span class="tbd">※要確認</span></span>
+            <span lang="vi">Nếu vượt quá số chỗ, ưu tiên người đăng ký trước <span class="tbd">※ Sẽ cập nhật</span></span>
+            <span lang="en">If oversubscribed, places go on a first-come basis <span class="tbd">※ TBC</span></span>
+          </p>
+        </div>
+        <div class="info__c" data-rv>
+          <p class="info__k">Bring</p>
+          <p class="info__v">
+            <span lang="ja">マイコップ・防寒着</span>
+            <span lang="vi">Cốc cá nhân, áo ấm</span>
+            <span lang="en">Your own cup, warm clothes</span>
+          </p>
+          <p class="info__s">
+            <span lang="ja">10月末の奥多摩は朝晩かなり冷えます。テント・寝袋の貸出は <span class="tbd">※要確認</span></span>
+            <span lang="vi">Cuối tháng 10 ở Okutama, sáng và tối khá lạnh. Việc cho thuê lều và túi ngủ <span class="tbd">※ Sẽ cập nhật</span></span>
+            <span lang="en">Late October in Okutama gets cold at night. Tent and sleeping-bag rental <span class="tbd">※ TBC</span></span>
+          </p>
+        </div>
+        <div class="info__c" data-rv>
+          <p class="info__k">Language</p>
+          <p class="info__v">日本語 / Tiếng Việt</p>
+          <p class="info__s">
+            <span lang="ja">通訳サポートの有無は <span class="tbd">※要確認</span></span>
+            <span lang="vi">Về hỗ trợ phiên dịch <span class="tbd">※ Sẽ cập nhật</span></span>
+            <span lang="en">Interpretation support <span class="tbd">※ TBC</span></span>
+          </p>
+        </div>
+        <div class="info__c" data-rv>
+          <p class="info__k">Rain</p>
+          <p class="info__v"><span class="tbd">※要確認</span></p>
+          <p class="info__s">
+            <span lang="ja">雨天決行・荒天中止の判断基準と、連絡方法をここに記載します</span>
+            <span lang="vi">Sẽ ghi rõ tiêu chí tổ chức khi mưa / hủy khi thời tiết xấu và cách thông báo</span>
+            <span lang="en">We will state here how we decide on rain or severe weather, and how we contact you</span>
+          </p>
+        </div>
+        <div class="info__c" data-rv>
+          <p class="info__k">Cancel</p>
+          <p class="info__v"><span class="tbd">※要確認</span></p>
+          <p class="info__s">
+            <span lang="ja">事前入金制のため、キャンセル料の発生時期と返金の扱いをここに記載します</span>
+            <span lang="vi">Vì thanh toán trước, sẽ ghi rõ thời điểm phát sinh phí hủy và cách hoàn tiền</span>
+            <span lang="en">As this is prepaid, we will state when cancellation fees apply and how refunds work</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 申し込み ============================== -->
+  <section class="sec entry" id="entry">
+    <div class="entry__art" aria-hidden="true"></div>
+    <div class="entry__veil" aria-hidden="true"></div>
+
+    <div class="wrap entry__in" data-rv>
+      <p class="kicker">Join us</p>
+      <h2 class="h2">
+        <span lang="ja">同じ鍋を囲む、<em>2日間</em>へ。</span>
+        <span lang="vi">Hai ngày quanh <em>cùng một nồi lẩu</em>.</span>
+        <span lang="en">Two days around <em>one hotpot</em>.</span>
+      </h2>
+      <p class="h2-en">Apply via Google Form</p>
+
+      <p class="lead">
+        <span lang="ja">申し込みはGoogleフォームから。事前入金制で、ご入金の確認をもって参加確定となります。</span>
+        <span lang="vi">Đăng ký qua Google Form. Chương trình thanh toán trước — suất tham gia được xác nhận sau khi chúng tôi nhận được thanh toán.</span>
+        <span lang="en">Apply through the Google Form. This event is prepaid — your place is confirmed once we receive your payment.</span>
+      </p>
+
+      <!-- 申し込みの流れ -->
+      <ul class="entry__steps">
+        <li><b>01</b>
+          <span lang="ja">フォームから申込</span>
+          <span lang="vi">Điền Google Form</span>
+          <span lang="en">Fill in the form</span>
+        </li>
+        <li><b>02</b>
+          <span lang="ja">受付メールが届く</span>
+          <span lang="vi">Nhận email xác nhận</span>
+          <span lang="en">Get our confirmation email</span>
+        </li>
+        <li><b>03</b>
+          <span lang="ja">事前入金</span>
+          <span lang="vi">Thanh toán trước</span>
+          <span lang="en">Pay in advance</span>
+        </li>
+        <li><b>04</b>
+          <span lang="ja">当日、TONAKAへ</span>
+          <span lang="vi">Đến TONAKA vào ngày diễn ra</span>
+          <span lang="en">Come to TONAKA on the day</span>
+        </li>
+      </ul>
+
+      <div class="entry__acts">
+        <a class="pill pill--fill" href="#">
+          <span class="pill__en">Google Form</span>
+          <span class="pill__jp">
+            <span lang="ja">参加を申し込む</span>
+            <span lang="vi">Đăng ký tham gia</span>
+            <span lang="en">Apply to join</span>
+          </span>
+        </a>
+        <a class="pill pill--line" href="#schedule">
+          <span class="pill__en">Schedule</span>
+          <span class="pill__jp">
+            <span lang="ja">当日の流れ</span>
+            <span lang="vi">Lịch trình</span>
+            <span lang="en">Timetable</span>
+          </span>
+        </a>
+      </div>
+
+      <p class="entry__note">
+        <span lang="ja">申込フォームURL <span class="tbd">※未定（仮リンク）</span> ／ 申込締切 <span class="tbd">○月○日（仮）</span></span>
+        <span lang="vi">Link Google Form <span class="tbd">※ Chưa có</span> ／ Hạn đăng ký <span class="tbd">※ Sẽ cập nhật</span></span>
+        <span lang="en">Form URL <span class="tbd">※ TBC</span> ／ Application deadline <span class="tbd">※ TBC</span></span>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== フッター ============================== -->
+<footer class="ft">
+  <div class="wrap ft__in">
+    <img class="ft__logo" src="../logo-full.png" alt="Dynamite">
+    <nav class="ft__nav">
+      <a href="#main">Highlights</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#venue">Venue</a>
+      <a href="#info">Info</a>
+      <a href="#entry">Join</a>
+    </nav>
+    <p class="ft__cr">© 2026 Dynamite</p>
+  </div>
+</footer>
+
+<!-- スマホ用の追従ボタン -->
+<div class="sticky">
+  <a class="pill pill--fill" href="#entry">
+    <span class="pill__en">Join us</span>
+    <span class="pill__jp">
+      <span lang="ja">参加を申し込む</span>
+      <span lang="vi">Đăng ký tham gia</span>
+      <span lang="en">Apply to join</span>
+    </span>
+  </a>
+</div>
+
+<script src="pattern-d.js"></script>
+</body>
+</html>
