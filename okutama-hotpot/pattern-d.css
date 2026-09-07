@@ -403,6 +403,7 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
 
 /* 施設の写真 3点 */
 .venue__gal { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: clamp(40px, 5vw, 64px); }
+.venue__gal--one { grid-template-columns: 1fr; max-width: 760px; }
 .venue__gal figure { margin: 0; }
 .venue__gal img {
   width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
