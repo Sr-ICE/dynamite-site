@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OKUTAMA HOTPOT CLASH 2026｜スープバトル × ランタン祭り｜TONAKA</title>
+<title>OKUTAMA HOTPOT EXCHANGE 2026｜鍋 × Lẩu × ランタンナイト｜TONAKA</title>
 <!-- ラフ公開中のため検索避け。内容が確定したらこの1行を削除する -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="2026.10.31-11.1、東京・檜原村の貸切キャンプ場TONAKAで開催。日本×ベトナムのスープバトルと、ホイアンのランタン祭り。1泊2日の交流キャンプ。">
+<meta name="description" content="2026.10.31-11.1、東京・檜原村のキャンプ場 TINY CAMP SPACE TONAKA を貸切って開催。日本の鍋とベトナムのLẩuを持ち寄る交換会と、自分たちでつくるランタンナイト。1泊2日の交流キャンプ。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="OKUTAMA HOTPOT CLASH 2026｜スープバトル × ランタン祭り">
+<meta property="og:title" content="OKUTAMA HOTPOT EXCHANGE 2026｜鍋 × Lẩu × ランタンナイト">
 <meta property="og:description" content="ひとつの鍋が、いちばん早い自己紹介になる。日本×ベトナム、1泊2日の交流キャンプ。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +28,11 @@
   ※ ベトナム語・英語は現状こちらで用意した仮訳です。
      藤井さんの原稿ができたら、各 lang="vi" / lang="en" の中身を
      差し替えてください。レイアウトはさわらなくて大丈夫です。
+
+  【確認用の仕掛けについて】
+  data-chg="…" と id="chg-N" が付いている要素が、今回の改訂で変更した箇所です
+  （内訳は changes.html。左下のボタンで Before / After を切り替えられます）。
+  公開時は data-chg 属性・chg-N の id・ページ末尾の「確認用」ブロックを削除してください。
   ===========================================================================
 -->
 
@@ -35,7 +40,7 @@
 <header class="hd" id="hd">
   <a class="hd__brand" href="../index.html" aria-label="Dynamite">
     <img class="hd__logo" src="../logo-mark.png" alt="Dynamite">
-    <span class="hd__ttl">Hotpot Clash 2026</span>
+    <span class="hd__ttl" data-chg="イベント名を Hotpot Exchange に変更" id="chg-1">Hotpot Exchange 2026</span>
   </a>
 
   <nav class="hd__nav" aria-label="ページ内ナビ">
@@ -112,10 +117,10 @@
       <div class="wrap">
         <p class="hero__date">2026.10.31 SAT — 11.01 SUN</p>
 
-        <h1 class="hero__ttl">
+        <h1 class="hero__ttl" data-chg="イベント名を CLASH → EXCHANGE に変更。英字サブも Nabe × Lẩu × Lantern Night に" id="chg-2">
           <span>Okutama</span>
-          <span class="l2">Hotpot Clash</span>
-          <span class="l3">2026 &nbsp;/&nbsp; Soup Battle × Lantern Night</span>
+          <span class="l2">Hotpot Exchange</span>
+          <span class="l3">2026 &nbsp;/&nbsp; Nabe × Lẩu × Lantern Night</span>
         </h1>
 
         <p class="hero__jp">
@@ -124,10 +129,10 @@
           <span lang="en">One hotpot is <b>the fastest introduction</b>.</span>
         </p>
 
-        <p class="hero__sub">
-          <span lang="ja">日本×ベトナムのスープバトルと、森いっぱいに広がるホイアンのランタン祭り。会場は東京・檜原村の貸切キャンプ場 TONAKA。</span>
-          <span lang="vi">Đại chiến nồi lẩu Nhật – Việt, và lễ hội đèn lồng Hội An giữa rừng thu. Địa điểm: khu cắm trại riêng TONAKA, làng Hinohara, Tokyo.</span>
-          <span lang="en">A Japan × Vietnam soup battle, and a Hoi An lantern night that fills the forest. At TONAKA, a private campsite in Hinohara, Tokyo.</span>
+        <p class="hero__sub" data-chg="バトルの表現をやめ、持ち寄って分け合う交流の書き方に変更" id="chg-3">
+          <span lang="ja"><span class="nw">日本の鍋と、</span><span class="nw">ベトナムのLẩu（ラウ）。</span><br class="pc"><span class="nw">ふたつの鍋を持ち寄り、</span><span class="nw">つくって、分け合う1泊2日。</span><br class="pc"><span class="nw">灯りは、自分たちの手でつくるランタン。</span><br class="pc"><span class="nw">会場は、東京・檜原村の小さなキャンプ場を</span><span class="nw">まるごと貸切。</span></span>
+          <span lang="vi">Nồi lẩu Nhật và nồi lẩu Việt — hai ngày cùng nấu và cùng chia sẻ. Ánh sáng đến từ những chiếc đèn lồng do chính chúng ta làm. Chúng tôi bao trọn khu cắm trại ở làng Hinohara, Tokyo.</span>
+          <span lang="en">Japanese nabe and Vietnamese lẩu, side by side — two days of cooking and sharing. The lights are lanterns we make ourselves. We book the whole campsite in Hinohara, Tokyo.</span>
         </p>
 
         <div class="hero__acts">
@@ -159,7 +164,7 @@
     <div class="wrap facts__in">
       <div class="facts__i">
         <p class="facts__k">Date</p>
-        <p class="facts__v">10/31 SAT 13:00 —<br>11/01 SUN 11:00</p>
+        <p class="facts__v" data-chg="終了時刻を 11/01 11:00 → 10:00 に変更" id="chg-4">10/31 SAT 13:00 —<br>11/01 SUN 10:00</p>
         <p class="facts__s">
           <span lang="ja">1泊2日</span>
           <span lang="vi">2 ngày 1 đêm</span>
@@ -168,29 +173,29 @@
       </div>
       <div class="facts__i">
         <p class="facts__k">Place</p>
-        <p class="facts__v">TONAKA</p>
-        <p class="facts__s">
-          <span lang="ja">東京・檜原村／1日1組限定の貸切キャンプ場</span>
-          <span lang="vi">Làng Hinohara, Tokyo — khu cắm trại riêng, mỗi ngày chỉ một nhóm</span>
-          <span lang="en">Hinohara, Tokyo — a private campsite, one group per day</span>
+        <p class="facts__v" data-chg="会場名は公式表記 TINY CAMP SPACE TONAKA に（カタカナ表記は公式ではないため）" id="chg-5">TONAKA</p>
+        <p class="facts__s" data-chg="「1日1組限定の貸切キャンプ場」を削除し、正式名称＋貸切開催の表記に" id="chg-6">
+          <span lang="ja"><span class="nw">TINY CAMP SPACE</span>｜<span class="nw">東京・檜原村</span>／<span class="nw">キャンプ場を貸切って開催</span></span>
+          <span lang="vi">TINY CAMP SPACE — Làng Hinohara, Tokyo / bao trọn khu cắm trại</span>
+          <span lang="en">TINY CAMP SPACE — Hinohara, Tokyo / the campsite is booked out for us</span>
         </p>
       </div>
       <div class="facts__i">
-        <p class="facts__k">Fee</p>
-        <p class="facts__v">¥○,○○○ <span class="tbd">（仮）</span></p>
-        <p class="facts__s">
-          <span lang="ja">事前入金制 <span class="tbd">※金額は確定次第</span></span>
-          <span lang="vi">Thanh toán trước <span class="tbd">※ Sẽ cập nhật</span></span>
-          <span lang="en">Prepayment <span class="tbd">※ TBC</span></span>
+        <p class="facts__k" data-chg="項目名を Fee → Price に変更" id="chg-7">Price</p>
+        <p class="facts__v">¥9,000 —</p>
+        <p class="facts__s" data-chg="金額を 9,000円〜 に確定。レンタルによる変動を追記" id="chg-8">
+          <span lang="ja">事前入金制／レンタル品によって金額が変わります</span>
+          <span lang="vi">Thanh toán trước / Giá thay đổi tùy theo đồ thuê</span>
+          <span lang="en">Prepaid / The price varies depending on rental items</span>
         </p>
       </div>
       <div class="facts__i">
         <p class="facts__k">Language</p>
         <p class="facts__v">日本語 / Tiếng Việt</p>
-        <p class="facts__s">
-          <span lang="ja">通訳サポート <span class="tbd">※要確認</span></span>
-          <span lang="vi">Hỗ trợ phiên dịch <span class="tbd">※ Sẽ cập nhật</span></span>
-          <span lang="en">Interpretation support <span class="tbd">※ TBC</span></span>
+        <p class="facts__s" data-chg="「※要確認」を外し、通訳サポートありに確定" id="chg-9">
+          <span lang="ja">通訳サポートあり</span>
+          <span lang="vi">Có hỗ trợ phiên dịch</span>
+          <span lang="en">Interpretation support available</span>
         </p>
       </div>
     </div>
@@ -201,42 +206,42 @@
     <div class="wrap">
       <div data-rv>
         <p class="kicker">01 &nbsp;Highlights</p>
-        <h2 class="h2">
-          <span lang="ja">つくって、飲み歩いて、<em>灯す</em>。</span>
-          <span lang="vi">Cùng nấu, cùng nếm, và <em>thắp sáng</em>.</span>
-          <span lang="en">Cook, taste, and <em>light up</em>.</span>
+        <h2 class="h2" data-chg="見出しから勝負の表現を外し、句点も削除" id="chg-10">
+          <span lang="ja">つくって、分け合って、<em>灯す</em></span>
+          <span lang="vi">Cùng nấu, cùng chia, cùng <em>thắp sáng</em></span>
+          <span lang="en">Cook, share, and <em>light up</em></span>
         </h2>
-        <p class="h2-en">Cook, taste, vote, and light up the forest</p>
+        <p class="h2-en">Cook together, share, and light up the forest</p>
       </div>
 
       <div class="main2">
 
-        <!-- 主役① スープバトル -->
+        <!-- 主役① 鍋とLẩuの交換会 -->
         <article class="mn" data-rv>
           <div class="mn__art">
             <span class="mn__badge">Main 01</span>
-            <img src="img/bonfire-forest.jpg" alt="火にかけた鍋" loading="lazy">
+            <img src="img/tonaka-night.jpg" alt="焚き火を囲む夜のTONAKA" loading="lazy" data-chg="交換会の写真を、TONAKAの実写（夜、焚き火を囲む人たち）に差し替え" id="chg-11">
           </div>
           <div class="mn__b">
-            <h3 class="mn__t">
-              <span lang="ja">日越融合スープバトル</span>
-              <span lang="vi">Đại chiến nồi lẩu Nhật – Việt</span>
-              <span lang="en">Japan × Vietnam Soup Battle</span>
+            <h3 class="mn__t" data-chg="「日越融合スープバトル」→「鍋とLẩuの交換会」に変更" id="chg-12">
+              <span lang="ja">鍋とLẩuの交換会</span>
+              <span lang="vi">Giao lưu Nabe – Lẩu</span>
+              <span lang="en">Nabe × Lẩu Exchange</span>
             </h3>
-            <p class="mn__vn">Lẩu Clash</p>
-            <p class="mn__en">Japan × Vietnam Soup Battle</p>
+            <p class="mn__vn">Giao lưu Nabe – Lẩu</p>
+            <p class="mn__en">Nabe × Lẩu Exchange</p>
 
-            <p class="mn__p">
-              <span lang="ja">共通の基本食材（肉・野菜）はチーム全員おなじ。<br>差を生むのは、ドラフト会議で獲得した日本とベトナムの調味料です。<br>味噌とナンプラー、柚子胡椒とレモングラス——組み合わせは自由。<br>オリジナルの鍋を作り上げて対抗戦に挑んだあとは、マイコップを持って全チームの鍋を飲み歩き、投票します。</span>
-              <span lang="vi">Nguyên liệu cơ bản (thịt, rau) giống nhau cho mọi đội. Khác biệt nằm ở gia vị Nhật và Việt giành được trong vòng bốc thăm — miso và nước mắm, yuzu kosho và sả, phối hợp tùy ý. Sau khi hoàn thành nồi lẩu của riêng mình, mọi người mang cốc riêng đi nếm thử lẩu của các đội khác và bình chọn.</span>
-              <span lang="en">Every team starts from the same base ingredients (meat, vegetables). The difference comes from the Japanese and Vietnamese seasonings won in a draft — miso and fish sauce, yuzu kosho and lemongrass, combined however you like. Once your pot is ready, everyone takes a cup and tastes every team's soup to vote.</span>
+            <p class="mn__p" data-chg="バトル・ドラフト会議・投票をすべて削除。持ち寄って分け合う内容に書き換え" id="chg-13">
+              <span lang="ja">共通の基本食材（肉・野菜）は全員おなじ。そこへ日本とベトナムの調味料を持ち寄って、チームごとにひと鍋つくります。<br>味噌とヌクマム、柚子胡椒とレモングラス——組み合わせは自由です。<br>できあがったら全部を並べて、マイコップを片手にみんなで食べ歩き。順位も勝ち負けもつけません。</span>
+              <span lang="vi">Nguyên liệu cơ bản (thịt, rau) giống nhau cho tất cả mọi người. Mỗi đội mang gia vị Nhật và Việt đến để nấu một nồi của riêng mình — miso và nước mắm, yuzu kosho và sả, phối hợp tùy ý. Khi xong, tất cả các nồi được bày ra và mọi người cầm cốc riêng đi nếm thử. Không chấm điểm, không thắng thua.</span>
+              <span lang="en">Everyone starts from the same base ingredients (meat and vegetables). Each team brings Japanese and Vietnamese seasonings and cooks one pot — miso and fish sauce, yuzu kosho and lemongrass, combined however you like. When the pots are ready we line them all up and taste our way around with a cup in hand. No scoring, no winners.</span>
             </p>
 
-            <p class="mn__time">14:30 — 17:00</p>
+            <p class="mn__time" data-chg="時間を 15:00 — 16:00 に変更" id="chg-14">15:00 — 16:00</p>
           </div>
         </article>
 
-        <!-- 主役② ホイアンのランタン祭り -->
+        <!-- 主役② ホイアンのランタンナイト -->
         <article class="mn mn--flip" data-rv>
           <div class="mn__art">
             <span class="mn__badge">Main 02</span>
@@ -244,20 +249,20 @@
           </div>
           <div class="mn__b">
             <h3 class="mn__t">
-              <span lang="ja">ホイアンのランタン祭り</span>
-              <span lang="vi">Lễ hội đèn lồng Hội An</span>
-              <span lang="en">Hoi An Lantern Festival</span>
+              <span lang="ja">ホイアンのランタンナイト</span>
+              <span lang="vi">Đêm đèn lồng Hội An</span>
+              <span lang="en">Hoi An Lantern Night</span>
             </h3>
-            <p class="mn__vn">Lễ hội đèn lồng Hội An</p>
+            <p class="mn__vn">Đêm đèn lồng Hội An</p>
             <p class="mn__en">Hoi An Lantern Night</p>
 
-            <p class="mn__p">
-              <span lang="ja">夕暮れ時、参加者全員で願いを描いたランタン（LED使用）を作成。<br>カウントダウンで一斉点灯し、ベトナムの古都ホイアンのような明かりが森に広がります。</span>
-              <span lang="vi">Lúc chạng vạng, mọi người cùng làm đèn lồng (dùng đèn LED) và viết điều ước lên đó. Cùng đếm ngược để thắp sáng đồng loạt, ánh đèn lan khắp rừng như phố cổ Hội An.</span>
-              <span lang="en">At dusk, everyone makes a lantern (LED) with a wish written on it. On a countdown, we light them all together, and the forest fills with light like the old town of Hoi An.</span>
+            <p class="mn__p" data-chg="昼のワークショップで自分たちが作ったランタンを使う、という流れに変更" id="chg-15">
+              <span lang="ja">昼のワークショップで、ひとりひとつランタン（LED使用）をつくります。<br>日が傾いたころ、自分の手でつくった明かりをカウントダウンで一斉点灯。ベトナムの古都ホイアンのような光が、森いっぱいに広がります。</span>
+              <span lang="vi">Vào buổi chiều, mỗi người tự làm một chiếc đèn lồng (dùng đèn LED) trong buổi workshop. Khi trời ngả bóng, chúng ta cùng đếm ngược và thắp sáng chính chiếc đèn mình làm — ánh sáng lan khắp rừng như phố cổ Hội An.</span>
+              <span lang="en">In the afternoon workshop, everyone makes their own lantern (LED). As the light fades we count down and switch them on together, and the forest fills with light like the old town of Hoi An.</span>
             </p>
 
-            <p class="mn__time">17:00 —</p>
+            <p class="mn__time" data-chg="時間を 16:00 — に変更" id="chg-16">16:00 —</p>
           </div>
         </article>
 
@@ -270,17 +275,12 @@
     <div class="wrap">
       <div data-rv>
         <p class="kicker">02 &nbsp;Schedule</p>
-        <h2 class="h2">
-          <span lang="ja">当日の<em>流れ</em>。</span>
-          <span lang="vi">Lịch trình <em>hai ngày</em>.</span>
-          <span lang="en">How the <em>two days</em> go.</span>
+        <h2 class="h2" data-chg="見出しの句点を削除" id="chg-17">
+          <span lang="ja">当日の<em>流れ</em></span>
+          <span lang="vi">Lịch trình <em>hai ngày</em></span>
+          <span lang="en">How the <em>two days</em> go</span>
         </h2>
-        <p class="h2-en">Two days, from clash to chill</p>
-        <p class="lead">
-          <span lang="ja">タイムテーブルは仮です。<span class="tbd">※要確認</span><br>確定次第、この表を差し替えます。</span>
-          <span lang="vi">Lịch trình dưới đây là tạm thời. <span class="tbd">※ Sẽ cập nhật</span><br>Sẽ được cập nhật khi có thông tin chính thức.</span>
-          <span lang="en">This timetable is provisional. <span class="tbd">※ TBC</span><br>It will be updated once confirmed.</span>
-        </p>
+        <p class="h2-en" data-chg="「タイムテーブルは仮です／確定次第この表を差し替えます」の注記を削除" id="chg-18">Two days, from hotpot to lanterns</p>
       </div>
 
       <div class="sch">
@@ -292,10 +292,10 @@
           </div>
           <div class="sch__r">
             <p class="sch__t">13:00</p>
-            <p class="sch__ti">
-              <span lang="ja">現地集合・チーム発表・テント設営<span class="sch__s">Meet up &amp; set up</span></span>
-              <span lang="vi">Tập trung, công bố đội, dựng lều<span class="sch__s">Meet up &amp; set up</span></span>
-              <span lang="en">Meet up, team announcement, pitch tents<span class="sch__s">Meet up &amp; set up</span></span>
+            <p class="sch__ti" data-chg="「現地集合・チーム発表」→「チェックイン・テント設営」に変更" id="chg-19">
+              <span lang="ja">チェックイン・テント設営<span class="sch__s">Check-in &amp; set up</span></span>
+              <span lang="vi">Nhận chỗ, dựng lều<span class="sch__s">Check-in &amp; set up</span></span>
+              <span lang="en">Check-in &amp; pitch tents<span class="sch__s">Check-in &amp; set up</span></span>
             </p>
           </div>
           <div class="sch__r">
@@ -307,35 +307,35 @@
             </p>
           </div>
           <div class="sch__r sch__r--peak">
-            <p class="sch__t">14:30</p>
-            <p class="sch__ti">
-              <span lang="ja">鍋（Hotpot）調理スタート<span class="sch__s">〜 スパイス争奪ドラフト会議 〜</span></span>
-              <span lang="vi">Bắt đầu nấu lẩu<span class="sch__s">〜 Bốc thăm giành gia vị 〜</span></span>
-              <span lang="en">Hotpot cooking starts<span class="sch__s">〜 Spice draft 〜</span></span>
+            <p class="sch__t" data-chg="調理スタートを 14:30 → 15:00 に変更" id="chg-20">15:00</p>
+            <p class="sch__ti" data-chg="「スパイス争奪ドラフト会議」を削除" id="chg-21">
+              <span lang="ja">鍋（Hotpot）調理スタート<span class="sch__s">〜 日本とベトナムの調味料を持ち寄って 〜</span></span>
+              <span lang="vi">Bắt đầu nấu lẩu<span class="sch__s">〜 Mang gia vị Nhật và Việt đến 〜</span></span>
+              <span lang="en">Hotpot cooking starts<span class="sch__s">〜 Bring your Japanese and Vietnamese seasonings 〜</span></span>
             </p>
           </div>
           <div class="sch__r">
             <p class="sch__t">15:45</p>
-            <p class="sch__ti">
-              <span lang="ja">スープ・ホッピング（試飲＆投票）<span class="sch__s">Tasting &amp; voting</span></span>
-              <span lang="vi">Đi nếm lẩu các đội &amp; bình chọn<span class="sch__s">Tasting &amp; voting</span></span>
-              <span lang="en">Soup hopping (tasting &amp; voting)<span class="sch__s">Tasting &amp; voting</span></span>
+            <p class="sch__ti" data-chg="「スープ・ホッピング（試飲＆投票）」→「みんなで試食会」に変更。投票を廃止" id="chg-22">
+              <span lang="ja">みんなで試食会<span class="sch__s">Tasting together</span></span>
+              <span lang="vi">Cùng nếm thử các nồi lẩu<span class="sch__s">Tasting together</span></span>
+              <span lang="en">Tasting together<span class="sch__s">Tasting together</span></span>
             </p>
           </div>
           <div class="sch__r sch__r--peak">
-            <p class="sch__t">17:00</p>
-            <p class="sch__ti">
-              <span lang="ja">ランタン一斉点灯＆表彰式<span class="sch__s">Lantern countdown &amp; awards</span></span>
-              <span lang="vi">Thắp đèn lồng đồng loạt &amp; trao giải<span class="sch__s">Lantern countdown &amp; awards</span></span>
-              <span lang="en">Lantern countdown &amp; awards<span class="sch__s">Lantern countdown &amp; awards</span></span>
+            <p class="sch__t" data-chg="点灯を 17:00 → 16:00 に変更" id="chg-23">16:00</p>
+            <p class="sch__ti" data-chg="「表彰式」を削除" id="chg-24">
+              <span lang="ja">ランタン一斉点灯<span class="sch__s">Lantern countdown</span></span>
+              <span lang="vi">Thắp đèn lồng đồng loạt<span class="sch__s">Lantern countdown</span></span>
+              <span lang="en">Lantern countdown<span class="sch__s">Lantern countdown</span></span>
             </p>
           </div>
           <div class="sch__r">
             <p class="sch__t">19:00</p>
-            <p class="sch__ti">
-              <span lang="ja">焚き火ネットワーキング<span class="sch__s">Bonfire chill</span></span>
-              <span lang="vi">Giao lưu bên đống lửa<span class="sch__s">Bonfire chill</span></span>
-              <span lang="en">Bonfire networking<span class="sch__s">Bonfire chill</span></span>
+            <p class="sch__ti" data-chg="「焚き火ネットワーキング」→「焚き火を囲んで自由時間」に変更" id="chg-25">
+              <span lang="ja">焚き火を囲んで自由時間<span class="sch__s">Free time by the fire</span></span>
+              <span lang="vi">Thời gian tự do bên đống lửa<span class="sch__s">Free time by the fire</span></span>
+              <span lang="en">Free time by the fire<span class="sch__s">Free time by the fire</span></span>
             </p>
           </div>
           <div class="sch__r">
@@ -371,7 +371,7 @@
             </p>
           </div>
           <div class="sch__r">
-            <p class="sch__t">09:30</p>
+            <p class="sch__t" data-chg="撤収・清掃を 09:30 → 08:30 に変更" id="chg-26">08:30</p>
             <p class="sch__ti">
               <span lang="ja">テント撤収・会場清掃<span class="sch__s">Pack up &amp; clean</span></span>
               <span lang="vi">Thu dọn lều &amp; dọn dẹp<span class="sch__s">Pack up &amp; clean</span></span>
@@ -379,7 +379,7 @@
             </p>
           </div>
           <div class="sch__r">
-            <p class="sch__t">10:30</p>
+            <p class="sch__t" data-chg="クロージングを 10:30 → 09:30 に変更" id="chg-27">09:30</p>
             <p class="sch__ti">
               <span lang="ja">クロージング＆記念撮影<span class="sch__s">Closing &amp; group photo</span></span>
               <span lang="vi">Bế mạc &amp; chụp ảnh chung<span class="sch__s">Closing &amp; group photo</span></span>
@@ -387,11 +387,11 @@
             </p>
           </div>
           <div class="sch__r">
-            <p class="sch__t">11:00</p>
-            <p class="sch__ti">
-              <span lang="ja">現地解散<span class="sch__s tbd">希望者は近隣の温泉へ ※要確認</span></span>
-              <span lang="vi">Kết thúc, giải tán<span class="sch__s tbd">Ai muốn có thể ghé onsen gần đó ※ Sẽ cập nhật</span></span>
-              <span lang="en">Finish on site<span class="sch__s tbd">Optional nearby hot spring ※ TBC</span></span>
+            <p class="sch__t" data-chg="解散を 11:00 → 10:00 に変更" id="chg-28">10:00</p>
+            <p class="sch__ti" data-chg="「希望者は近隣の温泉へ ※要確認」を削除" id="chg-29">
+              <span lang="ja">現地解散<span class="sch__s">Finish on site</span></span>
+              <span lang="vi">Kết thúc, giải tán<span class="sch__s">Finish on site</span></span>
+              <span lang="en">Finish on site<span class="sch__s">Finish on site</span></span>
             </p>
           </div>
         </div>
@@ -402,63 +402,128 @@
   <!-- ============================== 会場 ============================== -->
   <section class="sec sec--paper" id="venue">
     <div class="wrap venue">
-      <figure class="venue__art" data-rv>
-        <img src="img/camp-autumn.jpg" alt="秋の森のキャンプサイト" loading="lazy">
-        <figcaption class="venue__ph">
-          <span lang="ja">※ 現在はイメージ写真です。TONAKA の実写に差し替え予定。</span>
-          <span lang="vi">※ Ảnh minh họa. Sẽ thay bằng ảnh thật của TONAKA.</span>
-          <span lang="en">※ Placeholder image. To be replaced with actual photos of TONAKA.</span>
-        </figcaption>
+      <figure class="venue__art" data-rv data-chg="会場写真をTONAKAの実写（公式サイト提供）に差し替え。「イメージ写真」の注記を削除" id="chg-30">
+        <img src="img/tonaka-site.jpg" alt="朝もやの山を望む、TONAKAのサイト" loading="lazy">
+        <figcaption class="venue__ph">Photo: TONAKA</figcaption>
       </figure>
 
       <div data-rv>
         <p class="kicker">03 &nbsp;Venue</p>
-        <h2 class="h2">
-          <span lang="ja">1日1組限定、<em>「TONAKA」</em>貸切。</span>
-          <span lang="vi">Bao trọn <em>“TONAKA”</em> — mỗi ngày chỉ một nhóm.</span>
-          <span lang="en">The whole of <em>“TONAKA”</em>, just for us.</span>
+        <h2 class="h2" data-chg="正式名称 TINY CAMP SPACE TONAKA に統一。見出しは「まるごと貸切」を主役に。句点なし" id="chg-31">
+          <span lang="ja"><span class="nw">小さなキャンプ場を、</span><em class="nw">まるごと貸切</em></span>
+          <span lang="vi">Một khu cắm trại nhỏ, <em>dành riêng cho chúng ta</em></span>
+          <span lang="en">A small campsite, <em>all to ourselves</em></span>
         </h2>
-        <p class="h2-en">A private campsite in Hinohara, Tokyo</p>
-        <p class="lead">
-          <span lang="ja">会場は東京・檜原村の完全プライベートキャンプ場「TONAKA」。全面にウッドチップが敷き詰められていて、靴や服を汚さずに過ごせます。1日1組の貸切なので、周りを気にせず思いきり楽しめる場所です。</span>
-          <span lang="vi">Địa điểm là khu cắm trại riêng “TONAKA” ở làng Hinohara, Tokyo. Toàn bộ mặt sân phủ dăm gỗ nên giày và quần áo không bị lấm bẩn. Mỗi ngày chỉ đón một nhóm, nên bạn có thể thoải mái vui chơi.</span>
-          <span lang="en">The venue is TONAKA, a fully private campsite in Hinohara, Tokyo. The ground is covered in wood chips, so your shoes and clothes stay clean. Only one group is booked per day, so we have the place to ourselves.</span>
+        <p class="h2-en">Tiny Camp Space TONAKA — Hinohara, Tokyo</p>
+        <p class="lead" data-chg="公式サイトの事実で書き直し（元ヘリポート・約1,000坪・全9サイト・地場の原木のウッドチップ・標高約570m）" id="chg-32">
+          <span lang="ja"><span class="nw">会場は東京・檜原村の</span><span class="nw">「TINY CAMP SPACE TONAKA」。</span><span class="nw">元ヘリポートの跡地につくられた、</span><span class="nw">約1,000坪・全9サイトの</span><span class="nw">小さなキャンプ場です。</span><br class="pc"><span class="nw">この2日間は、ここをまるごと貸切ります。</span><br class="pc"><span class="nw">地場の原木を砕いたウッドチップが</span><span class="nw">全面に敷かれ、</span><span class="nw">靴も服も汚れません。</span><span class="nw">目の前には山。</span><span class="nw">標高は約570m。</span></span>
+          <span lang="vi">Địa điểm là “TINY CAMP SPACE TONAKA” ở làng Hinohara, Tokyo — một khu cắm trại nhỏ khoảng 3.300 m², 9 sân, xây trên nền sân bay trực thăng cũ. Trong hai ngày này, chúng ta bao trọn cả khu. Toàn bộ mặt sân phủ dăm gỗ từ gỗ địa phương nên giày và quần áo không bị bẩn. Trước mặt là núi, độ cao khoảng 570 m.</span>
+          <span lang="en">The venue is “TINY CAMP SPACE TONAKA” in Hinohara, Tokyo — a small campsite of about 3,300 m² and nine pitches, built on a former helipad. For these two days we have the whole place to ourselves. The ground is covered in wood chips from local timber, so shoes and clothes stay clean. Mountains in front of you, at about 570 m above sea level.</span>
         </p>
 
         <dl class="venue__list">
           <div class="venue__row">
             <dt>Address</dt>
-            <dd>
-              <span lang="ja">東京都西多摩郡檜原村 <span class="tbd">※詳細は確定次第</span></span>
-              <span lang="vi">Làng Hinohara, Nishitama, Tokyo <span class="tbd">※ Sẽ cập nhật</span></span>
-              <span lang="en">Hinohara, Nishitama, Tokyo <span class="tbd">※ TBC</span></span>
+            <dd data-chg="住所を記載し、Googleマップへのリンクを追加（郵便番号 190-0222 は公式サイトと日本郵便で確認済み）" id="chg-33">
+              <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E6%AA%9C%E5%8E%9F%E6%9D%91%E4%BA%BA%E9%87%8C6858-18" target="_blank" rel="noopener"><span class="nw">〒190-0222</span> <span class="nw">東京都西多摩郡檜原村人里6858-18</span> <span class="maplink__x">↗</span></a>
             </dd>
           </div>
           <div class="venue__row">
             <dt>Access</dt>
-            <dd>
-              <span lang="ja">都心から車で約90分／武蔵五日市駅からの送迎 <span class="tbd">※要確認</span></span>
-              <span lang="vi">Khoảng 90 phút lái xe từ trung tâm Tokyo / đưa đón từ ga Musashi-Itsukaichi <span class="tbd">※ Sẽ cập nhật</span></span>
-              <span lang="en">About 90 min by car from central Tokyo / shuttle from Musashi-Itsukaichi Stn <span class="tbd">※ TBC</span></span>
+            <dd data-chg="所要時間を公式サイトの記載（圏央道の各ICから45〜50分）に。自家用車可・駐車場ありを追記。送迎は希望があれば対応、に" id="chg-34">
+              <span lang="ja"><span class="nw">圏央道 あきる野IC・日の出IC・西八王子ICから</span><span class="nw">車で45〜50分。</span><span class="nw">自家用車で来られます（駐車場あり）。</span><br class="pc"><span class="nw">武蔵五日市駅からの送迎は、</span><span class="nw">ご希望があれば対応します。</span></span>
+              <span lang="vi">Khoảng 45–50 phút lái xe từ các nút giao Akiruno / Hinode / Nishi-Hachioji trên đường Ken-O. Bạn có thể đi xe riêng (có chỗ đậu). Chúng tôi có thể đưa đón từ ga Musashi-Itsukaichi nếu bạn cần.</span>
+              <span lang="en">About 45–50 min by car from the Akiruno, Hinode or Nishi-Hachioji exits on the Ken-O Expressway. Coming by car is fine (parking available). Pick-up from Musashi-Itsukaichi Station can be arranged on request.</span>
             </dd>
           </div>
           <div class="venue__row">
             <dt>Stay</dt>
-            <dd>
-              <span lang="ja">テント泊（レンタルの有無は <span class="tbd">※要確認</span>）</span>
-              <span lang="vi">Ngủ lều (việc cho thuê thiết bị <span class="tbd">※ Sẽ cập nhật</span>)</span>
-              <span lang="en">Camping in tents (rental availability <span class="tbd">※ TBC</span>)</span>
+            <dd data-chg="有料レンタルあり・数に限りがあるため事前申込制、に確定" id="chg-35">
+              <span lang="ja">テント泊。有料レンタルがあります（数に限りがあるため事前申込制）。</span>
+              <span lang="vi">Ngủ lều. Có cho thuê thiết bị (số lượng có hạn, cần đăng ký trước).</span>
+              <span lang="en">Camping in tents. Paid rental is available (limited stock, advance booking required).</span>
             </dd>
           </div>
           <div class="venue__row">
             <dt>Facility</dt>
-            <dd>
-              <span lang="ja">ウッドチップ敷き・水場・トイレあり</span>
-              <span lang="vi">Sân phủ dăm gỗ, có khu vực nước và nhà vệ sinh</span>
-              <span lang="en">Wood-chip ground, water point and toilets on site</span>
+            <dd data-chg="設備を公式情報に合わせて更新（炊事場・トイレ・駐車場）" id="chg-36">
+              <span lang="ja">全面ウッドチップ・炊事場・トイレ・駐車場</span>
+              <span lang="vi">Sân phủ dăm gỗ toàn bộ, khu bếp, nhà vệ sinh, chỗ đậu xe</span>
+              <span lang="en">Wood-chip ground throughout, cooking area, toilets and parking</span>
             </dd>
           </div>
         </dl>
+      </div>
+    </div>
+
+    <!-- 施設の写真（TONAKA 提供） -->
+    <div class="wrap" data-rv>
+      <ul class="venue__gal" data-chg="施設の実写3点（センターハウス／広場サイト／デッキサイト）を追加。昼の写真で明暗のバランスをとる" id="chg-37">
+        <li>
+          <figure>
+            <img src="img/tonaka-centerhouse.jpg" alt="センターハウス" loading="lazy">
+            <figcaption>Center House
+              <span lang="ja">受付・物販・トイレ・炊事場</span>
+              <span lang="vi">Lễ tân, cửa hàng, nhà vệ sinh, khu bếp</span>
+              <span lang="en">Reception, shop, toilets, cooking area</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/tonaka-hiroba.jpg" alt="広場サイト" loading="lazy">
+            <figcaption>Hiroba Site
+              <span lang="ja">山を望む平地のサイト。テント泊はここ</span>
+              <span lang="vi">Sân bằng phẳng nhìn ra núi. Chúng ta ngủ lều ở đây</span>
+              <span lang="en">Flat pitches facing the mountains. This is where we camp</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/tonaka-deck.jpg" alt="デッキサイト" loading="lazy">
+            <figcaption>Deck Site
+              <span lang="ja">ウッドデッキのある、屋根つきのサイト</span>
+              <span lang="vi">Sân có sàn gỗ và mái che</span>
+              <span lang="en">A covered pitch with a wooden deck</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 動画と地図 -->
+    <div class="wrap" data-rv>
+      <a class="vtube" href="https://www.youtube.com/watch?v=1v6EU2Je6Xo" target="_blank" rel="noopener" data-chg="YouTube導線を、施設紹介動画のサムネイル＋再生ボタンのカードに変更（リンク先も動画そのものに）" id="chg-38">
+        <span class="vtube__th">
+          <img src="img/tonaka-video.jpg" alt="" loading="lazy">
+          <span class="vtube__play" aria-hidden="true"></span>
+        </span>
+        <span class="vtube__b">
+          <span class="vtube__k">YouTube ／ TONAKA</span>
+          <span class="vtube__t">
+            <span lang="ja">9つのサイトを、<span class="nw">動画で先に歩いておく</span></span>
+            <span lang="vi">Đi dạo trước qua 9 sân bằng video</span>
+            <span lang="en">Walk the nine pitches on video, before you come</span>
+          </span>
+          <span class="vtube__s">
+            <span lang="ja">TONAKAが公開している施設紹介（2026年8月）。受付から各サイトまで、ひと通り見られます。当日の動きが想像しやすくなります。</span>
+            <span lang="vi">Video giới thiệu do TONAKA đăng (tháng 8/2026), từ lễ tân đến từng sân. Xem trước để dễ hình dung ngày hôm đó.</span>
+            <span lang="en">TONAKA's own tour of the site (Aug 2026), from reception to every pitch. It makes the day much easier to picture.</span>
+          </span>
+          <span class="vtube__c">
+            <span lang="ja">▶ 動画を見る</span>
+            <span lang="vi">▶ Xem video</span>
+            <span lang="en">▶ Watch</span>
+          </span>
+        </span>
+      </a>
+
+      <div class="vmap" data-chg="地図を全幅に拡大" id="chg-39">
+        <iframe
+          src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E6%AA%9C%E5%8E%9F%E6%9D%91%E4%BA%BA%E9%87%8C6858-18&amp;hl=ja&amp;z=15&amp;output=embed"
+          title="TONAKA の場所"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -468,73 +533,208 @@
     <div class="wrap">
       <div data-rv>
         <p class="kicker">04 &nbsp;Information</p>
-        <h2 class="h2">
-          <span lang="ja">参加にあたって。</span>
-          <span lang="vi">Trước khi tham gia.</span>
-          <span lang="en">Before you join.</span>
+        <h2 class="h2" data-chg="見出しの句点を削除" id="chg-40">
+          <span lang="ja">参加にあたって</span>
+          <span lang="vi">Trước khi tham gia</span>
+          <span lang="en">Before you join</span>
         </h2>
-        <p class="h2-en">Fees, capacity and what to bring</p>
+        <p class="h2-en">Price, capacity and how it works</p>
       </div>
 
       <div class="info">
         <div class="info__c" data-rv>
-          <p class="info__k">Fee</p>
-          <p class="info__v">¥○,○○○ <span class="tbd">（仮）</span></p>
+          <p class="info__k" data-chg="項目名を Fee → Price に変更" id="chg-41">Price</p>
+          <p class="info__v" data-chg="9,000円〜 に確定" id="chg-42">¥9,000 —</p>
           <p class="info__s">
-            <span lang="ja">内訳は検討中です <span class="tbd">※要確認</span></span>
-            <span lang="vi">Chi tiết đang được xây dựng <span class="tbd">※ Sẽ cập nhật</span></span>
-            <span lang="en">Breakdown is still being worked out <span class="tbd">※ TBC</span></span>
+            <span lang="ja">1泊2日・夕食／朝食つき。レンタル品によって金額が変わります</span>
+            <span lang="vi">2 ngày 1 đêm, đã gồm bữa tối và bữa sáng. Giá thay đổi tùy theo đồ thuê</span>
+            <span lang="en">2 days and 1 night, dinner and breakfast included. The price varies depending on rental items</span>
           </p>
         </div>
         <div class="info__c" data-rv>
           <p class="info__k">Capacity</p>
-          <p class="info__v">○○名 <span class="tbd">（仮）</span></p>
+          <p class="info__v" data-chg="定員を30名までに確定" id="chg-43">
+            <span lang="ja">30名まで</span>
+            <span lang="vi">Tối đa 30 người</span>
+            <span lang="en">Up to 30 people</span>
+          </p>
           <p class="info__s">
-            <span lang="ja">申込多数の場合は先着順 <span class="tbd">※要確認</span></span>
-            <span lang="vi">Nếu vượt quá số chỗ, ưu tiên người đăng ký trước <span class="tbd">※ Sẽ cập nhật</span></span>
-            <span lang="en">If oversubscribed, places go on a first-come basis <span class="tbd">※ TBC</span></span>
+            <span lang="ja">申込多数の場合は先着順です</span>
+            <span lang="vi">Nếu vượt quá số chỗ, ưu tiên người đăng ký trước</span>
+            <span lang="en">If oversubscribed, places go on a first-come basis</span>
           </p>
         </div>
         <div class="info__c" data-rv>
-          <p class="info__k">Bring</p>
-          <p class="info__v">
-            <span lang="ja">マイコップ・防寒着</span>
-            <span lang="vi">Cốc cá nhân, áo ấm</span>
-            <span lang="en">Your own cup, warm clothes</span>
-          </p>
+          <p class="info__k" data-chg="Language の枠をやめ、申込締切に差し替え" id="chg-44">Deadline</p>
+          <p class="info__v">10 / 24 SAT</p>
           <p class="info__s">
-            <span lang="ja">10月末の奥多摩は朝晩かなり冷えます。テント・寝袋の貸出は <span class="tbd">※要確認</span></span>
-            <span lang="vi">Cuối tháng 10 ở Okutama, sáng và tối khá lạnh. Việc cho thuê lều và túi ngủ <span class="tbd">※ Sẽ cập nhật</span></span>
-            <span lang="en">Late October in Okutama gets cold at night. Tent and sleeping-bag rental <span class="tbd">※ TBC</span></span>
+            <span lang="ja">2026年10月24日（土）まで。定員に達し次第、締め切ります</span>
+            <span lang="vi">Đến hết ngày 24/10/2026 (Thứ Bảy). Sẽ đóng sớm nếu đủ số người</span>
+            <span lang="en">Until Sat 24 Oct 2026. We close earlier once the places are filled</span>
           </p>
         </div>
-        <div class="info__c" data-rv>
-          <p class="info__k">Language</p>
-          <p class="info__v">日本語 / Tiếng Việt</p>
-          <p class="info__s">
-            <span lang="ja">通訳サポートの有無は <span class="tbd">※要確認</span></span>
-            <span lang="vi">Về hỗ trợ phiên dịch <span class="tbd">※ Sẽ cập nhật</span></span>
-            <span lang="en">Interpretation support <span class="tbd">※ TBC</span></span>
-          </p>
-        </div>
-        <div class="info__c" data-rv>
-          <p class="info__k">Rain</p>
-          <p class="info__v"><span class="tbd">※要確認</span></p>
-          <p class="info__s">
-            <span lang="ja">雨天決行・荒天中止の判断基準と、連絡方法をここに記載します</span>
-            <span lang="vi">Sẽ ghi rõ tiêu chí tổ chức khi mưa / hủy khi thời tiết xấu và cách thông báo</span>
-            <span lang="en">We will state here how we decide on rain or severe weather, and how we contact you</span>
-          </p>
-        </div>
-        <div class="info__c" data-rv>
-          <p class="info__k">Cancel</p>
-          <p class="info__v"><span class="tbd">※要確認</span></p>
-          <p class="info__s">
-            <span lang="ja">事前入金制のため、キャンセル料の発生時期と返金の扱いをここに記載します</span>
-            <span lang="vi">Vì thanh toán trước, sẽ ghi rõ thời điểm phát sinh phí hủy và cách hoàn tiền</span>
-            <span lang="en">As this is prepaid, we will state when cancellation fees apply and how refunds work</span>
-          </p>
-        </div>
+      </div>
+
+      <!-- 長めの案内（見出しを押すと開く） -->
+      <div class="notes" data-chg="長文の案内を折りたたみ式に変更" id="chg-45">
+
+        <details class="note note--ph" data-rv data-chg="食事の案内を新規追加（持ち込みの扱い・費用に含まれるもの・ドリンク販売）" id="chg-46">
+          <summary class="note__t">
+            <span lang="ja">食事について</span>
+            <span lang="vi">Về bữa ăn</span>
+            <span lang="en">About meals</span>
+          </summary>
+          <div class="note__in">
+            <div class="note__b">
+            <p>
+              <span lang="ja">食材の持ち込みはご遠慮ください。夕食・朝食はこちらで用意します（お菓子などの軽食は持ち込んでいただいて大丈夫です）。<br>会場では、ベトナムビールやソフトドリンクも販売しています。</span>
+              <span lang="vi">Vui lòng không mang nguyên liệu nấu ăn đến. Bữa tối và bữa sáng do chúng tôi chuẩn bị (đồ ăn vặt thì bạn cứ mang theo thoải mái).<br>Tại chỗ có bán bia Việt Nam và nước ngọt.</span>
+              <span lang="en">Please don't bring your own ingredients. Dinner and breakfast are provided by us (snacks are fine to bring).<br>Vietnamese beer and soft drinks are on sale at the venue.</span>
+            </p>
+          </div>
+            <figure class="note__ph">
+            <img src="img/banhmi.jpg" alt="2日目の朝食、バインミー" loading="lazy">
+          </figure>
+          </div>
+        </details>
+
+        <details class="note" data-rv data-chg="持ち物の案内として独立させた" id="chg-47">
+          <summary class="note__t">
+            <span lang="ja">持ち物について</span>
+            <span lang="vi">Đồ cần mang theo</span>
+            <span lang="en">What to bring</span>
+          </summary>
+          <div class="note__b">
+            <p>
+              <span lang="ja">マイコップと防寒着をお持ちください。10月末の檜原村は、朝晩かなり冷え込みます。</span>
+              <span lang="vi">Hãy mang theo cốc cá nhân và áo ấm. Cuối tháng 10 ở Hinohara, sáng sớm và ban đêm khá lạnh.</span>
+              <span lang="en">Please bring your own cup and warm clothes. Late October in Hinohara gets cold in the morning and at night.</span>
+            </p>
+          </div>
+        </details>
+
+        <details class="note" data-rv data-chg="レンタル品の一覧を新規追加。数に限りがあるため持参のお願いを明記" id="chg-48">
+          <summary class="note__t">
+            <span lang="ja">レンタルについて</span>
+            <span lang="vi">Về đồ cho thuê</span>
+            <span lang="en">About rental</span>
+          </summary>
+          <div class="note__b">
+            <p>
+              <span lang="ja">数に限りがあります。お持ちの方は、できるだけご持参ください。<br>用意しているものは下記のとおりです。料金や詳しい条件は、申込フォームに記載しています。</span>
+              <span lang="vi">Số lượng có hạn. Nếu bạn có sẵn, hãy mang theo giúp chúng tôi.<br>Dưới đây là những gì chúng tôi chuẩn bị. Giá và điều kiện chi tiết được ghi trong form đăng ký.</span>
+              <span lang="en">Stock is limited, so please bring your own if you have it.<br>Here is what we have. Prices and details are in the application form.</span>
+            </p>
+            <ul class="rent">
+              <li>
+                <span lang="ja">テント（1〜4名用）— 人数に応じてご用意します</span>
+                <span lang="vi">Lều (1–4 người) — chuẩn bị theo số lượng người</span>
+                <span lang="en">Tents (for 1–4) — arranged according to numbers</span>
+              </li>
+              <li>
+                <span lang="ja">ファミリーテント（4人用）×1 ／ 2ルームテント（4人用）×1 ／ ソロテント ×2〜3</span>
+                <span lang="vi">Lều gia đình (4 người) ×1 / Lều 2 phòng (4 người) ×1 / Lều đơn ×2–3</span>
+                <span lang="en">Family tent (for 4) ×1 / Two-room tent (for 4) ×1 / Solo tents ×2–3</span>
+              </li>
+              <li>
+                <span lang="ja">コット ×3 ／ マット</span>
+                <span lang="vi">Giường xếp ×3 / Thảm nằm</span>
+                <span lang="en">Cots ×3 / Sleeping mats</span>
+              </li>
+              <li>
+                <span lang="ja">テーブル（大きめ）×2</span>
+                <span lang="vi">Bàn (cỡ lớn) ×2</span>
+                <span lang="en">Tables (large) ×2</span>
+              </li>
+              <li>
+                <span lang="ja">チェア ×7脚（ベンチを含む）／ ミニチェアもあります</span>
+                <span lang="vi">Ghế ×7 (gồm cả ghế băng) / Có cả ghế mini</span>
+                <span lang="en">Chairs ×7 (including benches) / Mini chairs also available</span>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="note" data-rv data-chg="雨天時の扱いを確定（小雨決行・2週間前と1週間前を目安に判断）" id="chg-49">
+          <summary class="note__t">
+            <span lang="ja">雨天時について</span>
+            <span lang="vi">Trường hợp trời mưa</span>
+            <span lang="en">If it rains</span>
+          </summary>
+          <div class="note__b">
+            <p>
+              <span lang="ja">小雨は決行します。荒天が見込まれる場合は、開催の2週間前と1週間前を目安に運営で判断し、お申し込みいただいた方へご連絡します。</span>
+              <span lang="vi">Mưa nhỏ vẫn tổ chức. Nếu dự báo thời tiết xấu, ban tổ chức sẽ quyết định vào khoảng 2 tuần và 1 tuần trước ngày diễn ra, và liên hệ với những người đã đăng ký.</span>
+              <span lang="en">We go ahead in light rain. If severe weather is forecast, we decide around two weeks and one week before the event, and contact everyone who has applied.</span>
+            </p>
+          </div>
+        </details>
+
+        <details class="note" data-rv data-chg="キャンセル規定を新規追加（返金率と、振込手数料はお客様負担の旨）" id="chg-50">
+          <summary class="note__t">
+            <span lang="ja">キャンセルについて</span>
+            <span lang="vi">Về việc hủy</span>
+            <span lang="en">Cancellation</span>
+          </summary>
+          <div class="note__b">
+            <p>
+              <span lang="ja">事前入金制です。キャンセルのご連絡をいただいた時期に応じて、下記のとおり返金します。<br>返金の際の振込手数料は、お客様のご負担となります。</span>
+              <span lang="vi">Chương trình thanh toán trước. Chúng tôi hoàn tiền theo thời điểm bạn báo hủy như dưới đây.<br>Phí chuyển khoản khi hoàn tiền do người tham gia chịu.</span>
+              <span lang="en">This event is prepaid. Refunds depend on when you tell us, as below.<br>Bank transfer fees for refunds are paid by the participant.</span>
+            </p>
+            <ul class="cxl">
+              <li>
+                <b>
+                  <span lang="ja">11日前まで</span>
+                  <span lang="vi">Trước 11 ngày</span>
+                  <span lang="en">11+ days before</span>
+                </b>
+                <span class="cxl__v">
+                  <span lang="ja">全額返金</span>
+                  <span lang="vi">Hoàn 100%</span>
+                  <span lang="en">Full refund</span>
+                </span>
+              </li>
+              <li>
+                <b>
+                  <span lang="ja">10日前〜8日前</span>
+                  <span lang="vi">10–8 ngày trước</span>
+                  <span lang="en">10–8 days before</span>
+                </b>
+                <span class="cxl__v">70%</span>
+              </li>
+              <li>
+                <b>
+                  <span lang="ja">7日前〜3日前</span>
+                  <span lang="vi">7–3 ngày trước</span>
+                  <span lang="en">7–3 days before</span>
+                </b>
+                <span class="cxl__v">50%</span>
+              </li>
+              <li>
+                <b>
+                  <span lang="ja">2日前〜前日</span>
+                  <span lang="vi">2 ngày–1 ngày trước</span>
+                  <span lang="en">2 days–1 day before</span>
+                </b>
+                <span class="cxl__v">20%</span>
+              </li>
+              <li>
+                <b>
+                  <span lang="ja">当日</span>
+                  <span lang="vi">Ngày diễn ra</span>
+                  <span lang="en">On the day</span>
+                </b>
+                <span class="cxl__v">
+                  <span lang="ja">返金なし</span>
+                  <span lang="vi">Không hoàn tiền</span>
+                  <span lang="en">No refund</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
@@ -546,10 +746,10 @@
 
     <div class="wrap entry__in" data-rv>
       <p class="kicker">Join us</p>
-      <h2 class="h2">
-        <span lang="ja">同じ鍋を囲む、<em>2日間</em>へ。</span>
-        <span lang="vi">Hai ngày quanh <em>cùng một nồi lẩu</em>.</span>
-        <span lang="en">Two days around <em>one hotpot</em>.</span>
+      <h2 class="h2" data-chg="見出しの句点を削除" id="chg-51">
+        <span lang="ja">同じ鍋を囲む、<em>2日間</em>へ</span>
+        <span lang="vi">Hai ngày quanh <em>cùng một nồi lẩu</em></span>
+        <span lang="en">Two days around <em>one hotpot</em></span>
       </h2>
       <p class="h2-en">Apply via Google Form</p>
 
@@ -584,7 +784,8 @@
       </ul>
 
       <div class="entry__acts">
-        <a class="pill pill--fill" href="#">
+        <!-- フォームURLが届いたら href を差し替え、is-wip クラスと下の注記を削除する -->
+        <a class="pill pill--fill is-wip" href="#" aria-disabled="true" data-chg="フォームURL待ち。届くまで押せない状態にして「準備中」と明示" id="chg-52">
           <span class="pill__en">Google Form</span>
           <span class="pill__jp">
             <span lang="ja">参加を申し込む</span>
@@ -602,10 +803,16 @@
         </a>
       </div>
 
-      <p class="entry__note">
-        <span lang="ja">申込フォームURL <span class="tbd">※未定（仮リンク）</span> ／ 申込締切 <span class="tbd">○月○日（仮）</span></span>
-        <span lang="vi">Link Google Form <span class="tbd">※ Chưa có</span> ／ Hạn đăng ký <span class="tbd">※ Sẽ cập nhật</span></span>
-        <span lang="en">Form URL <span class="tbd">※ TBC</span> ／ Application deadline <span class="tbd">※ TBC</span></span>
+      <p class="entry__wip">
+        <span lang="ja">※ 申込フォームは準備中です。公開までもう少しお待ちください。</span>
+        <span lang="vi">※ Form đăng ký đang được chuẩn bị. Vui lòng chờ thêm một chút.</span>
+        <span lang="en">※ The application form is being prepared. Please hold on a little longer.</span>
+      </p>
+
+      <p class="entry__note" data-chg="申込締切を 2026年10月24日（土）に確定" id="chg-53">
+        <span lang="ja">申込締切 2026年10月24日（土）</span>
+        <span lang="vi">Hạn đăng ký: 24/10/2026 (Thứ Bảy)</span>
+        <span lang="en">Application deadline: Sat 24 Oct 2026</span>
       </p>
     </div>
   </section>
@@ -638,6 +845,34 @@
     </span>
   </a>
 </div>
+
+<!-- ===========================================================================
+     確認用｜Before / After の切り替え
+     公開時は、このブロック（と pattern-d.before.html / pattern-d.before.css /
+     changes.html、pattern-d.css・pattern-d.js 末尾の「確認用」ブロック）を削除する。
+     =========================================================================== -->
+<div class="ba" id="ba" aria-label="確認用の操作">
+  <a class="ba__b" href="pattern-d.before.html" data-ba>Before</a>
+  <a class="ba__b is-on" href="pattern-d.html" data-ba>After</a>
+  <span class="ba__sep" aria-hidden="true"></span>
+  <button class="rv__btn" type="button" id="rvBtn" aria-pressed="false" aria-controls="rvCol">
+    <span class="rv__dot" aria-hidden="true"></span>
+    <span class="rv__lb">変更点を表示</span>
+    <span class="rv__n" id="rvN">0</span>
+  </button>
+</div>
+
+<aside class="rv-col" id="rvCol" aria-label="変更点の内訳">
+  <div class="rv-col__hd">
+    <p class="rv-col__k">Changes</p>
+    <p class="rv-col__t">変更点の内訳<span class="rv-col__n" id="rvN2"></span></p>
+    <div class="rv-col__acts">
+      <a class="rv-col__lk" href="changes.html" target="ohc-changes">別タブで開く ↗</a>
+      <button class="rv-col__x" type="button" id="rvClose" aria-label="閉じる">×</button>
+    </div>
+  </div>
+  <div class="rv-col__b" id="rvList"></div>
+</aside>
 
 <script src="pattern-d.js"></script>
 </body>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>変更点の内訳｜OKUTAMA HOTPOT EXCHANGE 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   変更点の内訳（確認用）
+   pattern-d.html の data-chg から自動生成。公開時はこのファイルごと削除する。
+   ========================================================= */
+:root {
+  --night:#0b100e; --night-2:#070b09; --night-3:#121a16;
+  --paper:#f2ece1; --amber:#f0a03c; --amber-2:#ffd79a; --vermilion:#e2483c;
+  --hair:rgba(242,236,225,0.16);
+  --text:rgba(242,236,225,0.86); --text-mute:rgba(242,236,225,0.6);
+  --f-disp:'Bebas Neue','Noto Serif JP',sans-serif;
+  --f-mincho:'Noto Serif JP',serif;
+  --f-body:'Noto Sans JP',sans-serif;
+}
+*,*::before,*::after { box-sizing:border-box; }
+body {
+  margin:0; background:var(--night); color:var(--paper);
+  font-family:var(--f-body); font-size:15px; line-height:1.9;
+  -webkit-font-smoothing:antialiased;
+}
+a { color:inherit; text-decoration:none; }
+h1,h2,p,ol { margin:0; }
+ol { list-style:none; padding:0; }
+.wrap { width:100%; max-width:900px; margin-inline:auto; padding-inline:28px; }
+
+.hd { border-bottom:1px solid var(--hair); background:var(--night-2); }
+.hd__in { padding:38px 0 30px; }
+.hd__k { font-family:var(--f-disp); font-size:14px; letter-spacing:.3em; color:var(--amber); }
+.hd__t { font-family:var(--f-mincho); font-weight:700; font-size:clamp(24px,3.4vw,34px); line-height:1.5; margin-top:12px; }
+.hd__s { margin-top:12px; font-size:13.5px; color:var(--text-mute); }
+.hd__acts { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+.btn {
+  display:inline-flex; align-items:center; gap:9px; min-height:46px; padding:0 22px;
+  border-radius:999px; border:1px solid transparent;
+  font-family:var(--f-disp); font-size:17px; letter-spacing:.12em; line-height:1;
+  transition:transform .3s cubic-bezier(.22,.61,.36,1), background-color .3s, border-color .3s, color .3s;
+}
+.btn em { font-family:var(--f-body); font-style:normal; font-size:12.5px; font-weight:700; letter-spacing:.02em; }
+.btn--fill { background:var(--vermilion); color:#fff; }
+.btn--fill:hover { transform:translateY(-3px); background:#cf3a2f; }
+.btn--line { border-color:rgba(242,236,225,.4); }
+.btn--line:hover { transform:translateY(-3px); border-color:var(--amber); color:var(--amber); }
+
+.note {
+  margin:26px 0 0; padding:14px 18px; border-left:2px solid var(--amber);
+  background:var(--night-3); font-size:13px; line-height:1.85; color:var(--text-mute);
+}
+
+.grp { padding:44px 0 8px; }
+.grp__t {
+  display:flex; align-items:baseline; gap:14px;
+  font-family:var(--f-mincho); font-weight:700; font-size:18px; letter-spacing:.04em;
+  padding-bottom:12px; border-bottom:1px solid var(--hair);
+}
+.grp__n { font-family:var(--f-disp); font-size:14px; letter-spacing:.14em; color:var(--amber); }
+
+.itm { display:grid; grid-template-columns:34px 1fr; gap:16px; padding:16px 2px; border-bottom:1px solid var(--hair); }
+.itm__no {
+  display:flex; align-items:center; justify-content:center;
+  width:34px; height:34px; border-radius:999px;
+  background:rgba(240,160,60,.14); border:1px solid rgba(240,160,60,.4); color:var(--amber);
+  font-family:var(--f-disp); font-size:15px; letter-spacing:.04em;
+  transition:background-color .25s, color .25s;
+}
+.itm__no:hover { background:var(--amber); color:var(--night); }
+.itm__t { font-family:var(--f-mincho); font-weight:700; font-size:15px; line-height:1.7; }
+.itm__a { margin-top:7px; font-size:13px; line-height:1.85; color:var(--text-mute); }
+.itm__a::before { content:"変更後　"; font-family:var(--f-disp); letter-spacing:.14em; color:var(--amber); font-size:12px; }
+
+.ft { padding:40px 0 60px; font-size:12.5px; color:var(--text-mute); }
+
+@media (max-width:560px) {
+  .wrap { padding-inline:20px; }
+  .itm { grid-template-columns:30px 1fr; gap:12px; }
+  .itm__no { width:30px; height:30px; font-size:14px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <div class="wrap hd__in">
+    <p class="hd__k">OKUTAMA HOTPOT EXCHANGE 2026</p>
+    <h1 class="hd__t">変更点の内訳<span class="grp__n">　全53件</span></h1>
+    <p class="hd__s">2026.09.07 時点。番号を押すと、LPの該当箇所が別タブで開いてその場所まで移動します。</p>
+    <div class="hd__acts">
+      <a class="btn btn--fill" href="pattern-d.html" target="ohc-lp"><span>LP</span><em>LPを開く</em></a>
+      <a class="btn btn--line" href="pattern-d.html#chg-1" target="ohc-lp"><span>Start</span><em>1番から見る</em></a>
+    </div>
+    <p class="note">このページは確認用です。公開版のサイトには含めません（このファイルを削除するだけで外れます）。<br>
+    LPの左下のボタンで、改訂前（Before）と改訂後（After）を切り替えて見比べられます。</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grp">
+    <h2 class="grp__t">ヘッダー<span class="grp__n">1件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-1" target="ohc-lp">1</a>
+        <div class="itm__b">
+          <p class="itm__t">イベント名を Hotpot Exchange に変更</p>
+          <p class="itm__a">Hotpot Exchange 2026</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">ヒーロー<span class="grp__n">2件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-2" target="ohc-lp">2</a>
+        <div class="itm__b">
+          <p class="itm__t">イベント名を CLASH → EXCHANGE に変更。英字サブも Nabe × Lẩu × Lantern Night に</p>
+          <p class="itm__a">Okutama Hotpot Exchange 2026 / Nabe × Lẩu × Lantern Night</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-3" target="ohc-lp">3</a>
+        <div class="itm__b">
+          <p class="itm__t">バトルの表現をやめ、持ち寄って分け合う交流の書き方に変更</p>
+          <p class="itm__a">日本の鍋と、 ベトナムのLẩu（ラウ）。 ふたつの鍋を持ち寄り、 つくって、分け合う1泊2日。 灯りは、自分たちの手でつくるランタン。 会場は、東京・檜原村の小さなキャンプ場を まるごと貸切。</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">開催概要バー<span class="grp__n">6件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-4" target="ohc-lp">4</a>
+        <div class="itm__b">
+          <p class="itm__t">終了時刻を 11/01 11:00 → 10:00 に変更</p>
+          <p class="itm__a">10/31 SAT 13:00 — 11/01 SUN 10:00</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-5" target="ohc-lp">5</a>
+        <div class="itm__b">
+          <p class="itm__t">会場名は公式表記 TINY CAMP SPACE TONAKA に（カタカナ表記は公式ではないため）</p>
+          <p class="itm__a">TONAKA</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-6" target="ohc-lp">6</a>
+        <div class="itm__b">
+          <p class="itm__t">「1日1組限定の貸切キャンプ場」を削除し、正式名称＋貸切開催の表記に</p>
+          <p class="itm__a">TINY CAMP SPACE ｜ 東京・檜原村 ／ キャンプ場を貸切って開催</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-7" target="ohc-lp">7</a>
+        <div class="itm__b">
+          <p class="itm__t">項目名を Fee → Price に変更</p>
+          <p class="itm__a">Price</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-8" target="ohc-lp">8</a>
+        <div class="itm__b">
+          <p class="itm__t">金額を 9,000円〜 に確定。レンタルによる変動を追記</p>
+          <p class="itm__a">事前入金制／レンタル品によって金額が変わります</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-9" target="ohc-lp">9</a>
+        <div class="itm__b">
+          <p class="itm__t">「※要確認」を外し、通訳サポートありに確定</p>
+          <p class="itm__a">通訳サポートあり</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">01　Highlights<span class="grp__n">7件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-10" target="ohc-lp">10</a>
+        <div class="itm__b">
+          <p class="itm__t">見出しから勝負の表現を外し、句点も削除</p>
+          <p class="itm__a">つくって、分け合って、 灯す</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-11" target="ohc-lp">11</a>
+        <div class="itm__b">
+          <p class="itm__t">交換会の写真を、TONAKAの実写（夜、焚き火を囲む人たち）に差し替え</p>
+          
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-12" target="ohc-lp">12</a>
+        <div class="itm__b">
+          <p class="itm__t">「日越融合スープバトル」→「鍋とLẩuの交換会」に変更</p>
+          <p class="itm__a">鍋とLẩuの交換会</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-13" target="ohc-lp">13</a>
+        <div class="itm__b">
+          <p class="itm__t">バトル・ドラフト会議・投票をすべて削除。持ち寄って分け合う内容に書き換え</p>
+          <p class="itm__a">共通の基本食材（肉・野菜）は全員おなじ。そこへ日本とベトナムの調味料を持ち寄って、チームごとにひと鍋つくります。 味噌とヌクマム、柚子胡椒とレモングラス——組み合わせは自由です。 できあがったら全部を並べて、マイコップを片手にみんなで食べ歩き。順位も勝ち負けもつけません。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-14" target="ohc-lp">14</a>
+        <div class="itm__b">
+          <p class="itm__t">時間を 15:00 — 16:00 に変更</p>
+          <p class="itm__a">15:00 — 16:00</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-15" target="ohc-lp">15</a>
+        <div class="itm__b">
+          <p class="itm__t">昼のワークショップで自分たちが作ったランタンを使う、という流れに変更</p>
+          <p class="itm__a">昼のワークショップで、ひとりひとつランタン（LED使用）をつくります。 日が傾いたころ、自分の手で作った明かりをカウントダウンで一斉点灯。ベトナムの古都ホイアンのような光が、森いっぱいに広がります。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-16" target="ohc-lp">16</a>
+        <div class="itm__b">
+          <p class="itm__t">時間を 16:00 — に変更</p>
+          <p class="itm__a">16:00 —</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">02　当日の流れ<span class="grp__n">13件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-17" target="ohc-lp">17</a>
+        <div class="itm__b">
+          <p class="itm__t">見出しの句点を削除</p>
+          <p class="itm__a">当日の 流れ</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-18" target="ohc-lp">18</a>
+        <div class="itm__b">
+          <p class="itm__t">「タイムテーブルは仮です／確定次第この表を差し替えます」の注記を削除</p>
+          <p class="itm__a">Two days, from hotpot to lanterns</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-19" target="ohc-lp">19</a>
+        <div class="itm__b">
+          <p class="itm__t">「現地集合・チーム発表」→「チェックイン・テント設営」に変更</p>
+          <p class="itm__a">チェックイン・テント設営 Check-in &amp; set up</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-20" target="ohc-lp">20</a>
+        <div class="itm__b">
+          <p class="itm__t">調理スタートを 14:30 → 15:00 に変更</p>
+          <p class="itm__a">15:00</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-21" target="ohc-lp">21</a>
+        <div class="itm__b">
+          <p class="itm__t">「スパイス争奪ドラフト会議」を削除</p>
+          <p class="itm__a">鍋（Hotpot）調理スタート 〜 日本とベトナムの調味料を持ち寄って 〜</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-22" target="ohc-lp">22</a>
+        <div class="itm__b">
+          <p class="itm__t">「スープ・ホッピング（試飲＆投票）」→「みんなで試食会」に変更。投票を廃止</p>
+          <p class="itm__a">みんなで試食会 Tasting together</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-23" target="ohc-lp">23</a>
+        <div class="itm__b">
+          <p class="itm__t">点灯を 17:00 → 16:00 に変更</p>
+          <p class="itm__a">16:00</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-24" target="ohc-lp">24</a>
+        <div class="itm__b">
+          <p class="itm__t">「表彰式」を削除</p>
+          <p class="itm__a">ランタン一斉点灯 Lantern countdown</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-25" target="ohc-lp">25</a>
+        <div class="itm__b">
+          <p class="itm__t">「焚き火ネットワーキング」→「焚き火を囲んで自由時間」に変更</p>
+          <p class="itm__a">焚き火を囲んで自由時間 Free time by the fire</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-26" target="ohc-lp">26</a>
+        <div class="itm__b">
+          <p class="itm__t">撤収・清掃を 09:30 → 08:30 に変更</p>
+          <p class="itm__a">08:30</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-27" target="ohc-lp">27</a>
+        <div class="itm__b">
+          <p class="itm__t">クロージングを 10:30 → 09:30 に変更</p>
+          <p class="itm__a">09:30</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-28" target="ohc-lp">28</a>
+        <div class="itm__b">
+          <p class="itm__t">解散を 11:00 → 10:00 に変更</p>
+          <p class="itm__a">10:00</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-29" target="ohc-lp">29</a>
+        <div class="itm__b">
+          <p class="itm__t">「希望者は近隣の温泉へ ※要確認」を削除</p>
+          <p class="itm__a">現地解散 Finish on site</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">03　会場<span class="grp__n">10件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-30" target="ohc-lp">30</a>
+        <div class="itm__b">
+          <p class="itm__t">会場写真をTONAKAの実写（公式サイト提供）に差し替え。「イメージ写真」の注記を削除</p>
+          <p class="itm__a">Photo: TONAKA</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-31" target="ohc-lp">31</a>
+        <div class="itm__b">
+          <p class="itm__t">正式名称 TINY CAMP SPACE TONAKA に統一。見出しは「まるごと貸切」を主役に。句点なし</p>
+          <p class="itm__a">小さなキャンプ場を、 まるごと貸切</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-32" target="ohc-lp">32</a>
+        <div class="itm__b">
+          <p class="itm__t">公式サイトの事実で書き直し（元ヘリポート・約1,000坪・全9サイト・地場の原木のウッドチップ・標高約570m）</p>
+          <p class="itm__a">会場は東京・檜原村の 「TINY CAMP SPACE TONAKA」。 元ヘリポートの跡地につくられた、 約1,000坪・全9サイトの 小さなキャンプ場です。 この2日間は、ここをまるごと貸切ります。 地場の原木を砕いたウッドチップが 全面に敷かれ、 靴も服も汚れません。 目の前には山。 標高は約570m。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-33" target="ohc-lp">33</a>
+        <div class="itm__b">
+          <p class="itm__t">住所を記載し、Googleマップへのリンクを追加（郵便番号 190-0222 は公式サイトと日本郵便で確認済み）</p>
+          <p class="itm__a">〒190-0222 東京都西多摩郡檜原村人里6858-18 ↗</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-34" target="ohc-lp">34</a>
+        <div class="itm__b">
+          <p class="itm__t">所要時間を公式サイトの記載（圏央道の各ICから45〜50分）に。自家用車可・駐車場ありを追記。送迎は希望があれば対応、に</p>
+          <p class="itm__a">圏央道 あきる野IC・日の出IC・西八王子ICから 車で45〜50分。 自家用車で来られます（駐車場あり）。 武蔵五日市駅からの送迎は、 ご希望があれば対応します。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-35" target="ohc-lp">35</a>
+        <div class="itm__b">
+          <p class="itm__t">有料レンタルあり・数に限りがあるため事前申込制、に確定</p>
+          <p class="itm__a">テント泊。有料レンタルがあります（数に限りがあるため事前申込制）。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-36" target="ohc-lp">36</a>
+        <div class="itm__b">
+          <p class="itm__t">設備を公式情報に合わせて更新（炊事場・トイレ・駐車場）</p>
+          <p class="itm__a">全面ウッドチップ・炊事場・トイレ・駐車場</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-37" target="ohc-lp">37</a>
+        <div class="itm__b">
+          <p class="itm__t">施設の実写3点（センターハウス／広場サイト／デッキサイト）を追加。昼の写真で明暗のバランスをとる</p>
+          <p class="itm__a">Center House 受付・物販・トイレ・炊事場 Hiroba Site 山を望む平地のサイト。テント泊はここ Deck Site ウッドデッキのある、屋根つきのサイト</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-38" target="ohc-lp">38</a>
+        <div class="itm__b">
+          <p class="itm__t">YouTube導線を、施設紹介動画のサムネイル＋再生ボタンのカードに変更（リンク先も動画そのものに）</p>
+          <p class="itm__a">YouTube ／ TONAKA 9つのサイトを、 動画で先に歩いておく TONAKAが公開している施設紹介（2026年8月）。受付から各サイトまで、ひと通り見られます。当日の動きが想像しやすくなります。 ▶ 動画を見る</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-39" target="ohc-lp">39</a>
+        <div class="itm__b">
+          <p class="itm__t">地図を全幅に拡大</p>
+          
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">04　参加にあたって<span class="grp__n">11件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-40" target="ohc-lp">40</a>
+        <div class="itm__b">
+          <p class="itm__t">見出しの句点を削除</p>
+          <p class="itm__a">参加にあたって</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-41" target="ohc-lp">41</a>
+        <div class="itm__b">
+          <p class="itm__t">項目名を Fee → Price に変更</p>
+          <p class="itm__a">Price</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-42" target="ohc-lp">42</a>
+        <div class="itm__b">
+          <p class="itm__t">9,000円〜 に確定</p>
+          <p class="itm__a">¥9,000 —</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-43" target="ohc-lp">43</a>
+        <div class="itm__b">
+          <p class="itm__t">定員を30名までに確定</p>
+          <p class="itm__a">30名まで</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-44" target="ohc-lp">44</a>
+        <div class="itm__b">
+          <p class="itm__t">Language の枠をやめ、申込締切に差し替え</p>
+          <p class="itm__a">Deadline</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-45" target="ohc-lp">45</a>
+        <div class="itm__b">
+          <p class="itm__t">長文の案内を折りたたみ式に変更</p>
+          <p class="itm__a">食事について 食材の持ち込みはご遠慮ください。夕食・朝食はこちらで用意します（お菓子などの軽食は持ち込んでいただいて大丈夫です）。 会場では、ベトナムビールやソフトドリンクも販売しています。 持ち物について マイコップと防寒着をお持ちください。10月末の檜原村は、朝晩かなり冷え込みます。 レンタルについて 数に限りがあります。お持ちの方は…</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-46" target="ohc-lp">46</a>
+        <div class="itm__b">
+          <p class="itm__t">食事の案内を新規追加（持ち込みの扱い・費用に含まれるもの・ドリンク販売）</p>
+          <p class="itm__a">食事について 食材の持ち込みはご遠慮ください。夕食・朝食はこちらで用意します（お菓子などの軽食は持ち込んでいただいて大丈夫です）。 会場では、ベトナムビールやソフトドリンクも販売しています。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-47" target="ohc-lp">47</a>
+        <div class="itm__b">
+          <p class="itm__t">持ち物の案内として独立させた</p>
+          <p class="itm__a">持ち物について マイコップと防寒着をお持ちください。10月末の檜原村は、朝晩かなり冷え込みます。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-48" target="ohc-lp">48</a>
+        <div class="itm__b">
+          <p class="itm__t">レンタル品の一覧を新規追加。数に限りがあるため持参のお願いを明記</p>
+          <p class="itm__a">レンタルについて 数に限りがあります。お持ちの方は、できるだけご持参ください。 用意しているものは下記のとおりです。料金や詳しい条件は、申込フォームに記載しています。 テント（1〜4名用）— 人数に応じてご用意します ファミリーテント（4人用）×1 ／ 2ルームテント（4人用）×1 ／ ソロテント ×2〜3 コット ×3 ／ マット テー…</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-49" target="ohc-lp">49</a>
+        <div class="itm__b">
+          <p class="itm__t">雨天時の扱いを確定（小雨決行・2週間前と1週間前を目安に判断）</p>
+          <p class="itm__a">雨天時について 小雨は決行します。荒天が見込まれる場合は、開催の2週間前と1週間前を目安に運営で判断し、お申し込みいただいた方へご連絡します。</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-50" target="ohc-lp">50</a>
+        <div class="itm__b">
+          <p class="itm__t">キャンセル規定を新規追加（返金率と、振込手数料はお客様負担の旨）</p>
+          <p class="itm__a">キャンセルについて 事前入金制です。キャンセルのご連絡をいただいた時期に応じて、下記のとおり返金します。 返金の際の振込手数料は、お客様のご負担となります。 11日前まで 全額返金 10日前〜8日前 70% 7日前〜3日前 50% 2日前〜前日 20% 当日 返金なし</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="grp">
+    <h2 class="grp__t">申し込み<span class="grp__n">3件</span></h2>
+    <ol class="lst">
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-51" target="ohc-lp">51</a>
+        <div class="itm__b">
+          <p class="itm__t">見出しの句点を削除</p>
+          <p class="itm__a">同じ鍋を囲む、 2日間 へ</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-52" target="ohc-lp">52</a>
+        <div class="itm__b">
+          <p class="itm__t">フォームURL待ち。届くまで押せない状態にして「準備中」と明示</p>
+          <p class="itm__a">Google Form 参加を申し込む</p>
+        </div>
+      </li>
+      <li class="itm">
+        <a class="itm__no" href="pattern-d.html#chg-53" target="ohc-lp">53</a>
+        <div class="itm__b">
+          <p class="itm__t">申込締切を 2026年10月24日（土）に確定</p>
+          <p class="itm__a">申込締切 2026年10月24日（土）</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+</main>
+
+<footer class="wrap ft">
+  <p>pattern-d.html の data-chg 属性から自動生成しています。本文を直したら生成し直してください。</p>
+</footer>
+
+</body>
+</html>
