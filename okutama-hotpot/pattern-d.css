@@ -288,18 +288,16 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
 .venue__wide { margin: clamp(30px, 3.6vw, 46px) auto 0; }
 .venue .lead { margin-top: 0; }
 .venue__wide img {
-  width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 40%;
+  width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 45%;
   border-radius: 4px; border: 1px solid var(--hair-ink); background: #e9e2d5;
 }
-.venue {
-  display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(30px, 5vw, 72px); align-items: start;
-  margin-top: clamp(36px, 4.5vw, 60px);
-}
-.venue > .venue__list { margin-top: 0; }
+/* 本文（主）→ 項目（従）を縦に。項目は本文より小さく、薄く */
+.venue { margin-top: clamp(36px, 4.5vw, 60px); }
+.venue > .venue__list { margin-top: clamp(28px, 3.5vw, 44px); max-width: 680px; }
 .venue__list { margin-top: 28px; border-top: 1px solid var(--hair-ink); }
 .venue__row { display: grid; grid-template-columns: 104px 1fr; gap: 18px; padding: 14px 2px; border-bottom: 1px solid var(--hair-ink); }
 .venue__row dt { font-family: var(--f-disp); font-size: 14px; letter-spacing: 0.18em; color: var(--ink-mute); }
-.venue__row dd { font-size: 14px; color: var(--ink-soft); }
+.venue__row dd { font-size: 13.5px; color: var(--ink-soft); }
 
 /* =========================================================
    INFO
@@ -377,7 +375,7 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
   /* SP では切り抜かず、元の比率のまま縮小して見せる */
   .mn__art { min-height: 0; }
   .mn__art img { height: auto; }
-  .sch, .venue { grid-template-columns: 1fr; }
+  .sch { grid-template-columns: 1fr; }
   .venue__wide img { aspect-ratio: auto; height: auto; }
   .venue > .venue__list { margin-top: 0; }
   .info { grid-template-columns: 1fr; }
@@ -415,13 +413,15 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
 
 /* 動画カード：サムネイル＋再生ボタン */
 .vtube {
-  display: grid; grid-template-columns: minmax(0, 46%) 1fr; align-items: center;
-  margin-top: clamp(28px, 3.5vw, 44px); border-radius: 4px; overflow: hidden;
-  background: var(--night-2); color: var(--paper);
-  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  display: grid; grid-template-columns: minmax(0, 46%) 1fr; gap: clamp(20px, 3vw, 40px); align-items: center;
+  margin-top: clamp(40px, 5vw, 64px); padding: clamp(22px, 2.6vw, 32px) 0;
+  border-top: 1px solid var(--hair-ink); border-bottom: 1px solid var(--hair-ink);
+  color: var(--ink);
 }
-.vtube:hover { transform: translateY(-3px); box-shadow: 0 26px 60px rgba(20, 18, 14, 0.28); }
-.vtube__th { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+.vtube__th {
+  position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden;
+  border-radius: 4px; border: 1px solid var(--hair-ink); background: #fbf8f2;
+}
 .vtube__th img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); }
 .vtube:hover .vtube__th img { transform: scale(1.04); }
 .vtube__play {
@@ -434,11 +434,12 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
   border-left: 20px solid #fff; border-top: 12px solid transparent; border-bottom: 12px solid transparent;
 }
 .vtube:hover .vtube__play { transform: scale(1.08); }
-.vtube__b { display: flex; flex-direction: column; padding: clamp(22px, 3vw, 38px); }
-.vtube__k { font-family: var(--f-disp); font-size: 14px; letter-spacing: 0.24em; color: var(--amber); }
+.vtube__b { display: flex; flex-direction: column; }
+.vtube__k { font-family: var(--f-disp); font-size: 14px; letter-spacing: 0.24em; color: var(--vermilion); }
 .vtube__t { font-family: var(--f-mincho); font-weight: 700; font-size: clamp(18px, 2vw, 23px); line-height: 1.6; margin-top: 10px; text-wrap: balance; }
-.vtube__s { font-size: 13.5px; line-height: 1.9; color: var(--text-mute); margin-top: 12px; text-wrap: pretty; }
-.vtube__c { margin-top: 18px; font-family: var(--f-body); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--amber-2); }
+.vtube__s { font-size: 14px; line-height: 1.9; color: var(--ink-soft); margin-top: 10px; max-width: 46ch; text-wrap: pretty; }
+.vtube__c { margin-top: 16px; font-family: var(--f-body); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--vermilion); transition: color 0.25s var(--ease); }
+.vtube:hover .vtube__c { color: #cf3a2f; }
 
 /* 地図（全幅） */
 .vmap {
