@@ -98,10 +98,8 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
 .lead { margin-top: 22px; max-width: 62ch; color: var(--text); text-wrap: pretty; }
 .sec--paper .lead { color: var(--ink-soft); }
 
-/* 折り返しの制御：文節を途中で割らない／PC幅だけ改行を効かせる */
-.nw { white-space: nowrap; }
-br.pc { display: none; }
-@media (min-width: 761px) { br.pc { display: inline; } }
+/* 折り返しの制御：日本語は文節の切れ目（HTML側に埋めた U+200B）でだけ折り返す */
+[lang="ja"] { word-break: keep-all; overflow-wrap: anywhere; }
 .hero__sub { max-width: 58ch; }
 
 /* 未確定項目 */
@@ -175,7 +173,7 @@ br.pc { display: none; }
    HERO
    ========================================================= */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; background: var(--night-2); }
-.hero__photo { position: absolute; inset: 0; background: url('img/hero-bonfire.jpg') center 62% / cover no-repeat; }
+.hero__photo { position: absolute; inset: 0; background: url('img/hero-bonfire-1600.webp') center 62% / cover no-repeat; }
 .hero__veil {
   position: absolute; inset: 0;
   background:
@@ -287,16 +285,17 @@ br.pc { display: none; }
    VENUE
    ========================================================= */
 /* 会場写真：本文幅いっぱいの横長（施設写真・動画・地図と同じ幅） */
-.venue__wide { margin: 0 auto; }
+.venue__wide { margin: clamp(30px, 3.6vw, 46px) auto 0; }
+.venue .lead { margin-top: 0; }
 .venue__wide img {
   width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 40%;
   border-radius: 4px; border: 1px solid var(--hair-ink); background: #e9e2d5;
 }
 .venue {
   display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(30px, 5vw, 72px); align-items: start;
-  margin-top: clamp(48px, 6vw, 84px);
+  margin-top: clamp(36px, 4.5vw, 60px);
 }
-.venue > .venue__list { margin-top: 10px; }
+.venue > .venue__list { margin-top: 0; }
 .venue__list { margin-top: 28px; border-top: 1px solid var(--hair-ink); }
 .venue__row { display: grid; grid-template-columns: 104px 1fr; gap: 18px; padding: 14px 2px; border-bottom: 1px solid var(--hair-ink); }
 .venue__row dt { font-family: var(--f-disp); font-size: 14px; letter-spacing: 0.18em; color: var(--ink-mute); }
@@ -315,7 +314,7 @@ br.pc { display: none; }
    ENTRY
    ========================================================= */
 .entry { position: relative; overflow: hidden; text-align: center; background: var(--night-2); }
-.entry__art { position: absolute; inset: 0; background: url('img/lantern-shop.jpg') center / cover no-repeat; }
+.entry__art { position: absolute; inset: 0; background: url('img/lantern-shop-1200.webp') center / cover no-repeat; }
 .entry__veil {
   position: absolute; inset: 0;
   background:
@@ -365,6 +364,8 @@ br.pc { display: none; }
   .info { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
+  .hero__photo { background-image: url('img/hero-bonfire-960.webp'); }
+  .entry__art { background-image: url('img/lantern-shop-720.webp'); }
   .hero__scroll { display: none; }
   .hero__date { font-size: 14px; letter-spacing: 0.18em; white-space: nowrap; }
   .hero__date::before, .hero__date::after { width: 16px; }
@@ -373,9 +374,11 @@ br.pc { display: none; }
   .facts__i:nth-child(n+3) { border-top: 1px solid var(--hair); }
   .mn, .mn--flip { grid-template-columns: 1fr; }
   .mn--flip .mn__art { order: 0; }
-  .mn__art { min-height: 230px; }
+  /* SP では切り抜かず、元の比率のまま縮小して見せる */
+  .mn__art { min-height: 0; }
+  .mn__art img { height: auto; }
   .sch, .venue { grid-template-columns: 1fr; }
-  .venue__wide img { aspect-ratio: 4 / 3; }
+  .venue__wide img { aspect-ratio: auto; height: auto; }
   .venue > .venue__list { margin-top: 0; }
   .info { grid-template-columns: 1fr; }
   .sticky { display: block; }
@@ -387,7 +390,6 @@ br.pc { display: none; }
   .wrap { padding-inline: 20px; }
   /* 会場の項目は、狭い画面では見出しと本文を縦に積む（本文幅を確保して溢れを防ぐ） */
   .venue__row { grid-template-columns: 1fr; gap: 4px; padding: 12px 2px; }
-  .venue__list .nw, .facts__s .nw { white-space: normal; }
 }
 
 /* =========================================================
@@ -504,12 +506,13 @@ br.pc { display: none; }
 
 /* ---------- レスポンシブ（追加分） ---------- */
 @media (max-width: 860px) {
-  .venue__gal { grid-template-columns: 1fr; gap: 14px; }
-  .venue__gal img { aspect-ratio: 16 / 10; }
+  .venue__gal { grid-template-columns: 1fr; gap: 18px; }
+  .venue__gal img { aspect-ratio: auto; height: auto; }
   .vtube { grid-template-columns: 1fr; }
   .vmap { aspect-ratio: 4 / 3; }
   .note--ph .note__in { grid-template-columns: 1fr; }
-  .note__ph { aspect-ratio: 16 / 9; order: -1; margin-bottom: 18px; }
+  .note__ph { aspect-ratio: auto; width: min(100%, 62vw); order: -1; margin-bottom: 18px; }
+  .note__ph img { height: auto; }
   .cxl li { font-size: 13px; }
 }
 
