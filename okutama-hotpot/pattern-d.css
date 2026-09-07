@@ -286,14 +286,17 @@ br.pc { display: none; }
 /* =========================================================
    VENUE
    ========================================================= */
-.venue { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(30px, 4.5vw, 66px); align-items: center; }
-.venue__art { position: relative; border: 1px solid var(--hair-ink); border-radius: 4px; overflow: hidden; background: #fbf8f2; aspect-ratio: 4 / 3; }
-.venue__art img { width: 100%; height: 100%; object-fit: cover; }
-.venue__ph {
-  position: absolute; z-index: 2; bottom: 10px; left: 10px; right: 10px;
-  font-size: 11.5px; line-height: 1.7; padding: 8px 13px; border-radius: 3px;
-  background: rgba(20, 18, 14, 0.82); color: var(--paper);
+/* 全幅の会場写真：セクションの上端まで出す */
+.venue__wide {
+  margin: calc(-1 * clamp(76px, 9vw, 124px)) 0 0;
+  height: clamp(340px, 46vw, 660px); overflow: hidden; background: #e9e2d5;
 }
+.venue__wide img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+.venue {
+  display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(30px, 5vw, 72px); align-items: start;
+  margin-top: clamp(48px, 6vw, 84px);
+}
+.venue > .venue__list { margin-top: 10px; }
 .venue__list { margin-top: 28px; border-top: 1px solid var(--hair-ink); }
 .venue__row { display: grid; grid-template-columns: 104px 1fr; gap: 18px; padding: 14px 2px; border-bottom: 1px solid var(--hair-ink); }
 .venue__row dt { font-family: var(--f-disp); font-size: 14px; letter-spacing: 0.18em; color: var(--ink-mute); }
@@ -372,7 +375,8 @@ br.pc { display: none; }
   .mn--flip .mn__art { order: 0; }
   .mn__art { min-height: 230px; }
   .sch, .venue { grid-template-columns: 1fr; }
-  .venue__art { order: -1; }
+  .venue__wide { height: 62vw; }
+  .venue > .venue__list { margin-top: 0; }
   .info { grid-template-columns: 1fr; }
   .sticky { display: block; }
   body { padding-bottom: 74px; }
