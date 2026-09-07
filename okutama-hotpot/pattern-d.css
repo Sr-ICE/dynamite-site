@@ -274,6 +274,7 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
 .sch__ti { font-family: var(--f-mincho); font-weight: 700; font-size: 15.5px; line-height: 1.7; }
 .sch__s { display: block; margin-top: 3px; font-size: 12.5px; font-family: var(--f-body); font-weight: 400; color: var(--text-mute); }
 .sch__s.tbd { color: var(--amber); }
+.sch__note { margin-top: 22px; font-size: 12.5px; line-height: 1.8; color: var(--text-mute); }
 .sch__r--peak .sch__t { color: var(--amber); }
 .sch__r--peak .sch__ti { color: var(--amber-2); }
 .sch__r--peak::before {
