@@ -292,9 +292,12 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
   width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 40%;
   border-radius: 4px; border: 1px solid var(--hair-ink); background: #e9e2d5;
 }
-/* 本文（主）→ 項目（従）を縦に。項目は本文より小さく、薄く */
-.venue { margin-top: clamp(36px, 4.5vw, 60px); }
-.venue > .venue__list { margin-top: clamp(28px, 3.5vw, 44px); max-width: 680px; }
+/* PC：本文（主）｜項目（従）を横並び。項目は本文より小さく、薄く。SP は縦積み */
+.venue {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(30px, 5vw, 72px); align-items: start;
+  margin-top: clamp(36px, 4.5vw, 60px);
+}
+.venue > .venue__list { margin-top: 4px; }
 .venue__list { margin-top: 28px; border-top: 1px solid var(--hair-ink); }
 .venue__row { display: grid; grid-template-columns: 104px 1fr; gap: 18px; padding: 14px 2px; border-bottom: 1px solid var(--hair-ink); }
 .venue__row dt { font-family: var(--f-disp); font-size: 14px; letter-spacing: 0.18em; color: var(--ink-mute); }
@@ -377,6 +380,8 @@ html[data-lang="en"] [lang]:not([lang="en"]) { display: none; }
   .mn__art { aspect-ratio: auto; min-height: 0; }
   .mn__art img { height: auto; }
   .sch { grid-template-columns: 1fr; }
+  .venue { display: block; }
+  .venue > .venue__list { margin-top: 28px; }
   .venue__wide img { aspect-ratio: auto; height: auto; }
   .venue > .venue__list { margin-top: 0; }
   .info { grid-template-columns: 1fr; }
